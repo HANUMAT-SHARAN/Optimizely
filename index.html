@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Optimizely</title>
+    <script src="http://kit.fontawesome.com/24c494a6b6.js"        crossorigin="anonymous"></script>
+<style>
+    
+    body{
+        margin:0%;
+        padding: 0%;
+    }
+    #navbar{
+        
+        height:100px;
+        width:90%;
+        margin: auto;
+        display:flex;
+
+    }
+    #navbar>div{
+      
+       width: 50%;
+       height:60%;
+       padding: auto;
+      
+    }
+    #first{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        margin:auto;
+        align-items: center;
+        font-weight: bold
+    
+    }
+    #second{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        margin:auto;
+        font-weight: bold
+       
+    }
+    #first>div{
+      
+        
+    }
+    #second>div{
+        
+        width:20%;
+        text-align: center;
+    }
+    #get{
+        border-radius: 60px;
+        text-align: center;
+        background-color: #0037fd;
+    }
+    #first>div:hover{
+        text-decoration:underline;
+        color:rgb(47, 1, 211)
+        
+    }
+    #second>div:hover{
+        text-decoration:underline;
+        color:rgb(47, 1, 211)
+        
+    }
+    #get:hover{
+        background-color: rgb(12, 12, 156);
+    }
+    #unlock{
+        width:90%;
+        height:500px;
+     
+        margin:auto;
+        margin-top:1%;
+        display:flex;
+    }
+    #unlock1{
+      
+        height: 100%;
+        width:35%;
+        
+
+    }
+    #unlock2{
+     
+        height:100%;
+        width:65%;
+    }
+    #unlock>#unlock1>h1{
+        font-size: 80px;
+    }#unlock1>p{
+        line-height: 30px;
+        font-size: 18px;
+    }
+    #video{
+        width:90%;
+        height:300px;
+        border:1px solid red;
+        margin:auto;
+        margin-top:1%;
+        display:flex;  
+        border-radius: 15px;
+        
+    }
+    #company{
+        width:90%;
+        
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,auto);
+        gap:20px;
+    }
+    #company>div{
+   
+        text-align: center;
+    }
+    #moco>img{
+        width :50%;
+    }
+    #stories{
+        margin: auto;
+        
+        width: 25%;
+        margin-top: 10px;
+    }
+    #stories>button{
+        font-size: 25px;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: rgb(42, 42, 145);
+    }
+    #stories>button:hover{
+        background-color: rgb(0, 0, 255);
+    }
+    #digital{
+      
+        width :100%;
+        height:500px;
+        display:flex;
+        margin-top :20px;
+    }
+    #digital>#blue{
+         height: 100%;
+         width:45%;
+         background-color:#080736;
+    }
+    #digital>#h{
+        width: 65%;
+       
+        background-color:#0037fd;
+       
+     
+    }
+    #blue{
+        display: flex;
+        text-align: center;
+    }
+    
+    #digital>#blue>div{
+      
+        width:100%
+    }
+   
+   #digital>#h>div{
+
+    height: 80%;
+    width: 80%;
+    padding: 10px;
+    margin-top: 10%;
+    margin-left: 15%;
+    line-height: 40px;
+
+  
+   }
+   #digital>#h>div>p{
+    font-size: 20px;
+   }
+   #cat{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap:20px;
+    background-color:#861dff;
+    margin-top: 40px;
+   }
+ 
+    #cat1{
+       
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(5,auto);
+    gap:20px;
+    width:60%;
+    margin:auto;
+    
+    }
+    #cat1>div{
+      
+        text-align: center;
+        border-radius: 15px;
+        background-color:#0c0b0b;
+        
+        
+    }
+    #cat1>div:hover{
+        background-color:#7136b8
+    } 
+    #cms{
+        display: flex;
+        justify-content: space-evenly;
+      
+    }
+    #cms>div{
+       
+        border-radius: 15px;
+       
+        width:50%
+    }
+    #cms>div:hover{
+        background-color: #080736;
+    }
+    #multi{
+        display: flex;
+       justify-content: space-evenly;
+      
+    }
+    #multi>div{
+        
+        border-radius: 15px;
+        
+       
+      
+    }
+    #multi>div:hover{
+        background-color: #080736;
+    }
+   
+</style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="first" > 
+           <div><img src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg" alt="logo">
+            
+           </div>
+           <div> <p>Products</p>
+           </div>
+           <div> <p>Plans</p></div>
+           <div><p>Resources</p></div>
+           <div> <p>Partners</p></div>
+
+
+        </div>
+        <div id="second">
+            <div><p>Support</p> </div>
+            <div><p><i class="fa-solid fa-magnifying-glass"> </i> Search</p></div>
+            <div><p><i class="fa-solid fa-user-plus"></i>Login</p></div>
+            <div id="get"><p id="get">Get Started</p></div>
+        </div>
+    </div>
+    <div id="unlock">
+        <div id="unlock1">
+            
+            <h1>Unclock Digital potential</h1>
+            <p>Creating digital experiences that transform your company takes data-driven decisions, continued experimentation and constant invention. Optimizely Digital Experience Platform helps you unlock your digital potential</p>
+
+        </div>
+        <div id="unlock2">
+            <img src="https://www.optimizely.com/contentassets/9c67aa9eed2e4b6fa8b8a802b673fb5e/homepage_illustration_new.svg" alt="homepage">
+        </div>
+    </div>
+    <div id="video">
+       
+   
+    </div>
+    <h1>Trusted By 9,000+ Bussinesses and million of Happy Customers </h1>
+    <div id="company">
+       
+           <div>
+            <img src="https://www.optimizely.com/globalassets/02.-global-images/customer-logos/ebay_logo.svg" alt="ebay_logo">
+           </div>
+           <div>
+            <img src="https://www.optimizely.com/globalassets/02.-global-images/customer-logos/dolby_logo_2019.svg" alt="">
+           </div>
+           <div>
+            <img src="https://www.optimizely.com/globalassets/02.-global-images/customer-logos/sme.svg" alt="">
+           </div>
+           <div>
+            <img src="https://www.optimizely.com/globalassets/02.-global-images/customer-logos/new_era_logo.svg" alt="">
+           </div>
+           <div>
+            <img src="https://www.optimizely.com/globalassets/02.-global-images/customer-logos/pizza_hut_logo.svg" alt="">
+           </div>
+           <div>
+            <img src="https://www.optimizely.com/globalassets/02.-global-images/customer-logos/fjall_raven_logo.svg" alt="">
+           </div>
+           <div id="moco">
+            <img src="https://www.optimizely.com/globalassets/02.-global-images/customer-logos/moco-food-logo-blue.svg" alt="">
+           </div>
+           <div>
+            <img src="https://www.optimizely.com/globalassets/02.-global-images/customer-logos/svg/logo_atlassian_100x300.svg" alt="">
+           </div>
+    </div>
+    <div id="stories">
+        <button>See Our Customers Stories</button>
+    </div>
+    <div id="digital">
+        <div id="blue">
+            <div> <h1>Digital Experience Platform</h1>
+                <iframe width="80%" height="80%" src="https://www.youtube.com/embed/tn0GZnqThR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+        </div>
+        <div id="h">
+            <div>
+              <h2>DXP</h2>
+              <h1>Confidently create and optimize with Optimizely Digital Experience Platform</h1>
+              <p>Transform digital experience creation with Optimizely Digital Experience Platform, an open, extensible platform providing one consistent foundation behind every digital touch point.</p>
+              <h3>Learn about our Digital Experience Platform <i class="fa-solid fa-arrow-right-long"></i>
+            </h3>
+
+            </div>
+            
+        </div>
+    </div>
+    <div id="cat">
+        <div> <h1>Content <i class="fa-solid fa-arrow-right-long"></i></h1>
+          <h3>Easily create, tailor and scale content on a best-in-class enterprise CMS.</h3>
+          <div id="cat1">
+            <div id="cms">
+                <div> <h3>CMS</h3></div>
+                <div><h3>Headless</h3></div>
+            </div>
+            <div><h3> Approval Workflows</h3></div>
+            <div> <h3>Media Management</h3></div>
+            <div> <h3>Authoring Layout</h3></div>
+            <div><h3>Project Management</h3></div>
+          </div>
+        </div>
+        <div> <h1>Commerce <i class="fa-solid fa-arrow-right-long"></i></h1>
+            <h3>Run multiple shops, inventory and a catalog online and/or offline.</h3>
+            <div id="cat1">
+              <div id="cms">
+                  <div> <h4>B2B</h4></div>
+                  <div><h4>B2C</h4></div>
+                  <div><h4>PIN</h4></div>
+                  <div> <h4>Targeting</h4></div>
+              </div>
+              <div id="multi">
+                <div><h4>Mutlitisite</h4></div>
+                <div><h4>Catalog Management</h4></div>
+              </div>
+              <div> <h4>Media Management</h4></div>
+             
+              
+            </div>
+          </div>
+          <div> <h1>Optimization <i class="fa-solid fa-arrow-right-long"></i></h1>
+            <h3>Use AI to test new features and personalize every touchpoint.
+
+            </h3>
+            <div id="cat1">
+              <div id="cms">
+                  <div> <h4>Web A/B Testing </h4></div>
+                  <div><h4>Personilazation</h4></div>
+                 
+                  
+              </div>
+              <div id="multi">
+                <div><h4>Future Management
+                </h3></div>
+                <div><h4>Data </h1></div>
+              </div>
+              <div id="multi">
+                <div><h4> Emails
+                </h4></div>
+                <div><h4>Recommendation </h4></div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+
+</body>
+</html>
