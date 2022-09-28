@@ -5,8 +5,652 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plans And Pricing</title>
+    <script src="http://kit.fontawesome.com/24c494a6b6.js"        crossorigin="anonymous"></script>
+    <style>
+        body{
+        margin:0%;
+        padding: 0%;
+    }
+    #navbar{
+        
+        height:100px;
+        width:90%;
+        margin: auto;
+        display:flex;
+
+    }
+    #navbar>div{
+      
+       width: 50%;
+       height:60%;
+       padding: auto;
+      
+    }
+    #first{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        margin:auto;
+        align-items: center;
+        font-weight: bold
+    
+    }
+    #second{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        margin:auto;
+        font-weight: bold
+       
+    }
+    #first>div{
+      
+        
+    }
+    #second>div{
+        
+        width:20%;
+        text-align: center;
+    }
+    #get{
+        border-radius: 60px;
+        text-align: center;
+        background-color: #0037fd;
+       
+    }
+    #first>div:hover{
+        text-decoration:underline;
+        color:rgb(47, 1, 211)
+        
+    }
+    #second>div:hover{
+        text-decoration:underline;
+        color:rgb(47, 1, 211)
+        
+    }
+    #get:hover{
+        background-color: rgb(12, 12, 156);
+    }
+    #plans{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,500px);
+       
+        width:90%;
+        margin:auto;
+        gap:20px;
+    }
+    #plans>div{
+      
+        line-height: 30px;
+        /* padding-left: 30px; */
+        background-color: #222222;
+        border-radius: 20px;
+    }
+    .color1{
+        width:100%;
+        height:3%;
+       
+        background-color: purple;
+        border-radius: 10px;
+
+    }
+    .color2{
+        width:100%;
+        height:3%;
+       
+        background-color:#ff8110 ;
+        border-radius: 10px;
+
+    }
+    .color3{
+        width:100%;
+        height:3%;
+      
+        background-color:#ffcc00 ;
+        border-radius: 10px;
+
+    }
+    .color4{
+        width:100%;
+        height:3%;
+      
+        background-color:
+#005f8c  ;
+    
+        border-radius: 10px;
+    }
+    .color5{
+        width:100%;
+        height:3%;
+        
+        background-color:#3be081  ;
+    
+        border-radius: 10px;
+    }
+    #plans>div>img{
+        width:20%;
+    }
+    #main{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto);
+        
+    }
+    #main>div>img{
+        width:50%;
+    }
+    #main>div{
+      
+        text-align: center;
+    }
+    #plans>div>button{
+font-size: 20px;
+margin-left: 110px;
+border-radius: 25px;
+padding: 10px;
+background-color: #0037fd;
+    }
+    #plans>div>button:hover{
+        background-color: blue;
+    }
+    #color6{
+       text-align: center;
+       background-color: 
+#080736;
+    }
+    #color6>div{
+        width:80%;
+        margin:auto;
+        background-color: #080736;
+        
+    }
+   
+    #color6>div>button{
+        
+font-size: 20px;
+
+border-radius: 25px;
+padding: 10px;
+background-color: #0037fd;
+    }
+    #color6>div>button:hover{
+        background-color: blue;
+    }
+    #sol{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,auto);
+        gap:20px;
+        width :90%;
+       margin: auto;
+        background-color: #222222;
+        text-align: left;
+    }
+    #big{
+        background-color: #222222;
+        width: 100%;
+        margin-top: 60px;
+        height:700px;
+        text-align: left;
+        
+     
+     
+
+    }
+    #sol>div{
+        text-align: left;
+        display: flex;
+        line-height: 30px;
+        background-color: #121212 ;
+       
+    }
+    #sol>div>:nth-child(1){
+        text-align: left;
+        width:30%;
+        
+        padding-top: 25px;
+    }
+    #sol>div>:nth-child(2){
+        padding-left: 20px;
+        text-align: left;
+    }
+    #plans+div{
+        background-color:#222222;
+        
+    }
+    #plans+div>h1{
+        margin-left: 60px;
+    }
+    #addon{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,300px);
+        gap: 20px;
+        width: 90%;
+        margin:auto;
+    }
+    #addon>div{
+     
+    }
+    #addon>:nth-child(1){
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:repeat(1,300px) ;
+        gap: 20px;
+    }
+    #addon>:nth-child(1)>div{
+    
+        line-height: 25px;
+    }
+    #addon>:nth-child(1)>div>img{
+       width: 20%;
+    }
+    #addon>:nth-child(2){
+        background-color: #ffcc00;
+        border-radius: 15px;
+        display: flex;
+       justify-content: space-evenly;
+    }
+    #addon>:nth-child(2)>div{
+       
+        margin:auto;
+    }
+    #addon>:nth-child(2)>:nth-child(2)>button{
+       
+        
+        font-size: 20px;
+        
+        border-radius: 25px;
+        padding: 10px;
+        background-color: #0037fd;
+            
+    }
+    #addon>:nth-child(2)>:nth-child(2)>button:hover{
+        background-color: blue;
+    }
+    #lastbar{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+grid-template-rows: repeat(2,auto);
+
+   }
+   #lastbar>div{
+  
+   }
+   #lastbar>:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap:20px;
+    background-color: #080736 ;
+   }
+   #lastbar>:nth-child(1)>div{
+ 
+    line-height: 25px;
+    padding-left:30px;
+    
+   }
+   #formbox+div>img{
+    height:100px
+   }
+   #formbox+div{
+    background-color: #080736 ;
+   }
+   #lastbar>:nth-child(1)>div>p:hover{
+ 
+        text-decoration:underline;
+        color:rgb(47, 1, 211)
+        
+    
+   }
+   #last{
+    display:flex;
+    width: 100%;
+    margin: auto;;
+    
+   }
+   #last>div{
+
+    width: 50%;
+   height:60px;
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    background-color: #393a5d;
+    
+
+   }
+   #last>:nth-child(2){
+    padding-top: 20px;
+   }
+   
+   #addon+div>img{
+    height:100px
+   }
+   #addon+div{
+    background-color: #080736 ;
+   }
+  
+    
+    </style>
 </head>
 <body>
+    <div id="navbar">
+        <div id="first" > 
+           <div><img src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg" alt="logo">
+            
+           </div>
+           <div> <p>Products</p>
+           </div>
+           <div> <p>Plans</p></div>
+           <div><p>Resources</p></div>
+           <div> <p>Partners</p></div>
+
+
+        </div>
+        <div id="second">
+            <div><p>Support</p> </div>
+            <div><p><i class="fa-solid fa-magnifying-glass"> </i> Search</p></div>
+            <div><p><i class="fa-solid fa-user-plus"></i>Login</p></div>
+            <div id="get"><p id="get">Get Started</p></div>
+        </div>
+    </div>
+    <h1>Plans & Prices</h1>
+    <div id="plans">
+        <div>
+            <div class="color1"></div>
+            <div id="main">
+               <div><img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_contentmarketingplatform.svg" alt=""></div>
+                <div><h1>Welcome </h1></div>
+                
+            </div>
+             <p>  Manage tasks, work, campaigns and content across teams for seamless collaboration.</p>
+                  <p>
+                    <i class="fa-regular fa-circle-check"></i>  Digital asset management</p>
+                    <p> <i class="fa-regular fa-circle-check"></i> Handle tasks and workflows</p>
+                    <p> <i class="fa-regular fa-circle-check"></i>
+                        Streamline work requests</p>
+                        <p> <i class="fa-regular fa-circle-check"></i>
+                            Integrated calendar to track timelines</p>
+                            <p> <i class="fa-regular fa-circle-check"></i> Easy commenting and collaboration to avoid bottlenecks</p>
+                            <button>Try For Free</button>
+        
+
+        </div>
+        <div>
+            <div class="color2"></div>
+            <div id="main">
+               <div><img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_contentcloud.svg" alt=""></div>
+                <div><h1>Content Management</h1></div>
+                
+            </div>
+             <p>  Manage tasks, work, campaigns and content across teams for seamless collaboration.</p>
+                  <p>
+                    <i class="fa-regular fa-circle-check"></i>  Digital asset management</p>
+                    <p> <i class="fa-regular fa-circle-check"></i> Handle tasks and workflows</p>
+                    <p> <i class="fa-regular fa-circle-check"></i>
+                        Streamline work requests</p>
+                        <p> <i class="fa-regular fa-circle-check"></i>
+                            Integrated calendar to track timelines</p>
+                            <p> <i class="fa-regular fa-circle-check"></i> Easy commenting and collaboration to avoid bottlenecks</p>
+                            <button>Try For Free</button>
+        
+
+        </div>
+        <div>
+            <div class="color3"></div>
+            <div id="main">
+               <div><img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_webexperimentation.svg" alt=""></div>
+                <div><h1>Web A/B Testing</h1></div>
+                
+            </div>
+             <p>  Manage tasks, work, campaigns and content across teams for seamless collaboration.</p>
+                  <p>
+                    <i class="fa-regular fa-circle-check"></i>  Digital asset management</p>
+                    <p> <i class="fa-regular fa-circle-check"></i> Handle tasks and workflows</p>
+                    <p> <i class="fa-regular fa-circle-check"></i>
+                        Streamline work requests</p>
+                        <p> <i class="fa-regular fa-circle-check"></i>
+                            Integrated calendar to track timelines</p>
+                            <p> <i class="fa-regular fa-circle-check"></i> Easy commenting and collaboration to avoid bottlenecks</p>
+                            <button>Try For Free</button>
+        
+
+        </div>
+        <div>
+            <div class="color4"></div>
+            <div id="main">
+               <div><img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_featuremanagement.svg" alt=""></div>
+                <div><h1>Feature Management</h1></div>
+                
+            </div>
+             <p>  Manage tasks, work, campaigns and content across teams for seamless collaboration.</p>
+                  <p>
+                    <i class="fa-regular fa-circle-check"></i>  Digital asset management</p>
+                    <p> <i class="fa-regular fa-circle-check"></i> Handle tasks and workflows</p>
+                    <p> <i class="fa-regular fa-circle-check"></i>
+                        Streamline work requests</p>
+                        <p> <i class="fa-regular fa-circle-check"></i>
+                            Integrated calendar to track timelines</p>
+                            <p> <i class="fa-regular fa-circle-check"></i> Easy commenting and collaboration to avoid bottlenecks</p>
+                            <button>Try For Free</button>
+        
+
+        </div>
+        <div>
+            <div class="color5"></div>
+            <div id="main">
+               <div><img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_commercecloud.svg" alt=""></div>
+                <div><h1>Commrce</h1></div>
+                
+            </div>
+             <p>  Manage tasks, work, campaigns and content across teams for seamless collaboration.</p>
+                  <p>
+                    <i class="fa-regular fa-circle-check"></i>  Digital asset management</p>
+                    <p> <i class="fa-regular fa-circle-check"></i> Handle tasks and workflows</p>
+                    <p> <i class="fa-regular fa-circle-check"></i>
+                        Streamline work requests</p>
+                        <p> <i class="fa-regular fa-circle-check"></i>
+                            Integrated calendar to track timelines</p>
+                            <p> <i class="fa-regular fa-circle-check"></i> Easy commenting and collaboration to avoid bottlenecks</p>
+                            <button>Try For Free</button>
+        
+
+        
+            
+       
+       
+    </div>
+       
+        <div style="background-color:#080736 ;" id="color6">
+        <div><h1>Need More?</h1>
+            <h2>No matter your tech stack or scale, we are here to help optimize your digital experiences.</h2>
+            <button>See Add Ons</button>
+        </div>
+<h3>Not Sure Where To <br> Start? </h3>
+<h3>Contact Us</h3>
+    </div>
+    </div>
     
+        <div id="big">
+            <h1>Solutions Just For You</h1>
+    <h3>We combined Products to unclock additional features</h1>
+    <div id="sol">
+        <div>
+            <div><img src="https://www.optimizely.com/contentassets/addabccfcf4341c2bf2ac7387b6d5794/opt-icons_50px_intelligent-content.svg" alt=""></div>
+           
+            <div> <h2>Intelligent Content</h2>
+               
+
+            <p>
+You need to convert raw data into recommendations that drive engagement and grow revenue.</p>
+<h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
+            </div>
+        </div>
+        <div>
+            <div><img src="https://www.optimizely.com/contentassets/feb4a78e35a34e5fb20a6e618ce5ddde/opt-icon_50px_ecommerce.svg" alt=""></div>
+           
+            <div> <h2>Adavtive Commerce </h2>
+               
+
+            <p>
+                See how you can automatically segment and target customers in real-time, predict behavior and infuse delight into every touchpoint.</p>
+<h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
+            </div>
+        </div>
+    
+        <div>
+            <div><img src="https://www.optimizely.com/contentassets/fbcc8c7ff9b54bdc92e4d112e5bd69f4/opt-icons_50px_b2b.svg" alt=""></div>
+           
+            <div> <h2>Digital  Disturbance</h2>
+               
+
+            <p>
+                Learn how to instantly boost conversions, cross-sells, upsells and order value with personalized product recommendations</p>
+<h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
+            </div>
+        </div>
+        <div>
+            <div><img src="https://www.optimizely.com/contentassets/1fba8b0720b5440fbf3ab5afc9ff45a3/opt-icon_50px_optimization.svg" alt=""></div>
+           
+            <div> <h2>Digital  Optimisation</h2>
+               
+
+            <p>
+               
+You need to collaborate effortlessly on content strategy, creation and analytics by going into deeper metrics than just web sessions.</p>
+<h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
+            </div>
+        </div>
+        <div>
+            <div><img src="https://www.optimizely.com/contentassets/553eba1e73f64367ae841b02ba9aee0a/opt-icon_50px_headless.svg" alt=""></div>
+           
+            <div> <h2>Headless Experiences</h2>
+               
+
+            <p>
+                You need to create feature flags, release products and run experiments in different parts of your stack, all from one place.</p>
+<h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
+            </div>
+        </div>
+       
+    </div>
+</div>
+    <h1 id="additonal">Additional Add-on and Upgrades</h1>
+    <div id="addon">
+        <div>
+            <div>
+                <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_contentintelligence.svg" alt="">
+                 <h2>Recommendations</h2>
+                 <p>Get prescriptive guidance in real-time so you know what content will convert and drive revenue.</p>
+                 <h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
+            </div>
+            <div>
+                <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_optimizelydataplatform.svg" alt="">
+                 <h2>Customer Data</h2>
+                 <p>Align your entire brand around the customer experience and let us do the heavy lifting of surfacing opportunities, automating tasks and streamlining execution.</p>
+                 <h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
+            </div>
+            <div>
+                <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_digitalassetmanagement.svg" alt="">
+                 <h2>Digital Assets Management</h2>
+                 <p>Save time, eliminate waste and govern your brand with Library—a digital asset management tool built for marketing content.</p>
+                 <h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
+            </div>
+            <div>
+                <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_delivra.svg" alt="">
+                 <h2>Email</h2>
+                 <p>Automate your multi-channel campaigns and start seeing boosts in the lifetime value of your prospects. Keep more customers longer.</p>
+                 <h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
+            </div>
+          
+        </div>
+        <div>
+          
+            <div>
+                <h1>Ready to get started with Optimizely?</h1>
+                <p>You're ready to unlock your digital potential. Ready, Set, GO!</p>
+
+            </div>
+            <div>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+    <div><img src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_symbol_full-color.svg" alt=""></div>
+
+    
+    <div id="lastbar">
+        <div>
+  
+            <div>
+                <h3>Products</h3>
+                <p>Digital Experience Platform</p>
+                <p>Content Cloud</p>
+                <p>Commerce Cloud</p>
+                <p>Intligence Cloud</p>
+                <p>Plan and Pricing</p>
+            </div>
+            <div>
+             <h3>Resources</h3>
+             <p>Insights</p>
+             <p>Blog</p>
+             <p>Event</p>
+             <p>Developer</p>
+             <p>Support</p>
+
+            </div>
+            <div>
+                <h3>Company</h3>
+                <p>About Us</p>
+                <p>Offices </p>
+                <p>Excutive Team</p>
+                <p>Diversity Inclusion</p>
+                <p>  Press</p>
+            </div>
+            <div>
+                <h3>Careers</h3>
+                <p>About Working at Optimizely</p>
+                
+                <p>We Are Hiring!</p> 
+            </div>
+            <div>
+           
+            <h3>Global Headquater
+               </h3>
+                <p>119 5th Ave 7th floor
+                    New York, NY 10003, USA</p>
+                    <p>Contact us
+                        </p>
+                       
+                       <p>Phone +1 603 594 0249</p>
+                
+
+            </div>
+        </div>
+            <div id="last">
+                <div>
+                    <div><p>© 2022 Optimizely, Inc. All Rights Reserved.
+                    </p>
+                    
+                    </div>
+                    <div><p>Privacy Policy</p></div>
+                    <div> <p>Website Terms Of use</p></div>
+                    <div><p>Trust Center</p></div>
+                </div>
+                <div>
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div><i class="fa-brands fa-youtube"></i></div>
+                    <div><i class="fa-brands fa-linkedin"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+ 
 </body>
 </html>
