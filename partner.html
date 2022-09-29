@@ -4,9 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://kit.fontawesome.com/24c494a6b6.js"        crossorigin="anonymous"></script>
+
     <title>Partner</title>
+    <style>
+           body{
+        margin:0%;
+        padding: 0%;
+    }
+    #navbar{
+        
+        height:100px;
+        width:90%;
+        margin: auto;
+        display:flex;
+
+    }
+    #navbar>div{
+      
+       width: 50%;
+       height:60%;
+       padding: auto;
+      
+    }
+    #first{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        margin:auto;
+        align-items: center;
+        font-weight: bold
+    
+    }
+    #second{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        margin:auto;
+        font-weight: bold
+       
+    }
+    #first>div{
+      
+        
+    }
+    #second>div{
+        
+        width:20%;
+        text-align: center;
+    }
+    #get{
+        border-radius: 60px;
+        text-align: center;
+        background-color: #0037fd;
+       
+    }
+    #first>div:hover{
+        text-decoration:underline;
+        color:rgb(47, 1, 211)
+        
+    }
+    #second>div:hover{
+        text-decoration:underline;
+        color:rgb(47, 1, 211)
+        
+    }
+    #get:hover{
+        background-color: rgb(12, 12, 156);
+    }
+    a{
+    text-decoration: none;
+    color:white
+   }
+
+
+ 
+
+  
+    </style>
 </head>
 <body>
-    
+    <div id="navbar">
+        <div id="first" > 
+           <div> <a href="index.html">  <img src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg" alt="logo"> </a>
+            
+           </div>
+           <div> <p>Products</p>
+           </div>
+           <div> 
+            <p><a  href="prices.html"> Prices</a> </p>
+        </div>
+           <div><p>Resources</p></div>
+           <div> <p>Partners</p></div>
+
+
+        </div>
+        <div id="second">
+            <div><p>Support</p> </div>
+            <div><p><i class="fa-solid fa-magnifying-glass"> </i> Search</p></div>
+            <div><p><i class="fa-solid fa-user-plus"></i>Login</p></div>
+            <div id="get"><p id="get">Get Started</p></div>
+        </div>
+    </div>
+   
+
 </body>
 </html>
