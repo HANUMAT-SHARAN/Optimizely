@@ -13,49 +13,56 @@
     }
     #navbar{
         
-        height:100px;
+  
         width:90%;
-        margin: auto;
-        display:flex;
+        margin:auto;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto);
 
     }
     #navbar>div{
       
-       width: 50%;
-       height:60%;
-       padding: auto;
+      
+       display:flex;
+      
+ 
+
       
     }
     #first{
-        display: flex;
+        
+     
+ 
         justify-content: space-evenly;
-        padding-top: 15px;
-        margin:auto;
-        align-items: center;
+      
         font-weight: bold
     
     }
     #second{
-        display: flex;
+      
         justify-content: space-evenly;
-        padding-top: 15px;
-        margin:auto;
+    
+   
         font-weight: bold
        
     }
-    #first>div{
-      
-        
-    }
+    
     #second>div{
         
-        width:20%;
+     
         text-align: center;
     }
     #get{
-        border-radius: 60px;
-        text-align: center;
-        background-color: #0037fd;
+        border-radius:20px;
+        padding:-19px;
+     
+    background-color: #0037fd;
+       
+    
+       
+    }
+    #get:hover{
        
     }
     #first>div:hover{
@@ -68,9 +75,7 @@
         color:rgb(47, 1, 211)
         
     }
-    #get:hover{
-        background-color: rgb(12, 12, 156);
-    }
+   
     #plans{
         display:grid;
         grid-template-columns: repeat(3,1fr);
@@ -146,7 +151,7 @@
     }
     #plans>div>button{
 font-size: 20px;
-margin-left: 110px;
+margin-left:35%;
 border-radius: 25px;
 padding: 10px;
 background-color: #0037fd;
@@ -186,12 +191,13 @@ background-color: #0037fd;
        margin: auto;
         background-color: #222222;
         text-align: left;
+        margin-bottom: 100px;
     }
     #big{
         background-color: #222222;
         width: 100%;
         margin-top: 60px;
-        height:700px;
+      
         text-align: left;
         
      
@@ -222,57 +228,48 @@ background-color: #0037fd;
     #plans+div>h1{
         margin-left: 60px;
     }
-    #addon{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(2,300px);
-        gap: 20px;
-        width: 90%;
-        margin:auto;
-    }
-    #addon>div{
-     
-    }
-    #addon>:nth-child(1){
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows:repeat(1,300px) ;
-        gap: 20px;
-    }
-    #addon>:nth-child(1)>div{
-    
-        line-height: 25px;
-    }
-    #addon>:nth-child(1)>div>img{
-       width: 20%;
-    }
-    #addon>:nth-child(2){
-        background-color: #ffcc00;
-        border-radius: 15px;
-        display: flex;
-       justify-content: space-evenly;
-    }
-    #addon>:nth-child(2)>div{
-       
-        margin:auto;
-    }
-    #addon>:nth-child(2)>:nth-child(2)>button{
-       
-        
-        font-size: 20px;
-        
-        border-radius: 25px;
-        padding: 10px;
-        background-color: #0037fd;
-            
-    }
-    #addon>:nth-child(2)>:nth-child(2)>button:hover{
-        background-color: blue;
-    }
+  
     #lastbar{
     display:grid;
     grid-template-columns: repeat(1,1fr);
 grid-template-rows: repeat(2,auto);
+
+   }
+   #lastbar>div{
+  
+   }
+   #lastbar>:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap:20px;
+    background-color: #080736 ;
+   }
+   #lastbar>:nth-child(1)>div{
+ 
+    line-height: 25px;
+    padding-left:30px;
+    
+   }
+   #formbox+div>img{
+    height:100px
+   }
+   #formbox+div{
+    background-color: #080736 ;
+   }
+ 
+   
+   #addon+div>img{
+    height:100px
+   }
+   #addon+div{
+    background-color: #080736 ;
+   }
+   #lastbar{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+grid-template-rows: repeat(2,auto);
+margin:auto;
 
    }
    #lastbar>div{
@@ -304,34 +301,260 @@ grid-template-rows: repeat(2,auto);
         
     
    }
+  #lastbar>div{
+
+   }
    #last{
-    display:flex;
+
     width: 100%;
-    margin: auto;;
+    display:flex
     
    }
    #last>div{
 
-    width: 50%;
-   height:60px;
+     width:50%;
+;
     display:flex;
-    justify-content: space-evenly;
-    padding-top: 20px;
+   
+  
     background-color: #393a5d;
     
+   }
+   #addon{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap:20px;
+    
+    padding:30px;
+
 
    }
-   #last>:nth-child(2){
-    padding-top: 20px;
+   #addon>div{
+ 
+    width:90%;
+
+
+    
    }
-   
-   #addon+div>img{
-    height:100px
-   }
-   #addon+div{
-    background-color: #080736 ;
+   #addon>div>p{
+    line-height: 25px;
    }
   
+   
+   #addon>div>img{
+   
+    width:20%;
+   }
+   #addon>div{
+
+   }
+ 
+   #last>div:nth-child(2){
+ 
+    justify-content: space-around;
+
+   }
+ 
+   @media all  and (min-width:320px) and (max-width:768px){
+    #plans{
+        display:grid;
+        grid-template-columns: repeat(1,1fr); 
+        grid-template-rows: repeat(6,600px);
+        width:100%;
+        padding-left:90px;
+        gap:20px;
+    }
+    #navbar{
+        
+  
+        
+     
+        grid-template-columns: repeat(1,1fr);
+       
+
+    }
+    #big{
+        background-color: #222222;
+        width: 100%;
+        margin-top: 60px;
+      
+        text-align: left;
+        margin-left:80px
+     
+     
+
+    }
+    #addon{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+   
+    gap:20px;
+    
+    padding:80px;
+
+
+   }
+ 
+    #sol{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+     
+        gap:20px;
+        width :90%;
+        padding-left:25px;
+        background-color: #222222;
+        text-align: left;
+    }
+    #lastbar{
+
+grid-template-columns: repeat(1,1fr);
+
+
+}
+   
+   }
+
+   @media all and (min-width:769px) and (max-width:1024px){
+    #plans{
+        display:grid;
+        grid-template-columns: repeat(1,1fr); 
+        grid-template-rows: repeat(6,600px);
+        width:100%;
+        padding-left:90px;
+        gap:20px;
+    }
+    #lastbar{
+
+grid-template-columns: repeat(1,1fr);
+
+
+}
+    #navbar{
+        
+  
+        
+     
+        grid-template-columns: repeat(1,1fr);
+       
+
+    }
+    #addon{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    gap:20px;
+    
+    padding:80px;
+
+
+   }
+  
+    #big{
+        background-color: #222222;
+        width: 100%;
+        margin-top: 60px;
+      
+        text-align: left;
+        margin-left:80px
+     
+     
+
+    }
+    #sol{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+     
+        gap:20px;
+        width :90%;
+        padding-left:25px;
+        background-color: #222222;
+        text-align: left;
+    }
+  
+   }
+   .searchtext{
+    width:100%;
+    padding:10%;
+    font-size: 15px;
+border:1px solid ;
+border-radius: 15px;
+transition: all 0.1s linear;
+   }
+/* 
+   #search:hover>.searchtext{
+    width:150%;
+    padding:20px;
+   } */
+
+
+#hidd{
+    display:none;
+    width:60%;
+    padding:20px;
+    font-size: 20px;
+    margin:auto;
+    background-color: black;
+    outline: #0037fd;
+  
+    margin-left: 10%;
+  
+   
+}
+#logo{
+    display: none;
+    padding:10px
+}
+#cross{
+    display: none;
+    padding-right: 23%;
+    font-size: 60px;
+  
+}
+#searchbar{
+    display:flex;
+    justify-content: center;
+   
+}
+#secondlast{
+  
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,300px);
+background-color: #0037fd;
+    
+
+}
+#secondlast>div{
+     background-color: #ffcc00; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    
+  
+    
+  
+    
+}
+#secondlast>div>:nth-child(2)>button{
+        
+        font-size: 20px;
+        
+        border-radius: 25px;
+        padding: 10px;
+        background-color: #0037fd;
+            }
+
+            #secondlast>div>:nth-child(2)>button:hover{
+                background-color: blue;
+            }
+            #lastlogo{
+                background-color:#080736
+            }
+  #lastlogo>img{
+    width: 5%;
+  }
     
     </style>
 </head>
@@ -350,12 +573,39 @@ grid-template-rows: repeat(2,auto);
 
         </div>
         <div id="second">
+    
+
             <div><p>Support</p> </div>
-            <div><p><i class="fa-solid fa-magnifying-glass"> </i> Search</p></div>
+            <div id="search">  <p>  
+
+                <i class="fa-solid fa-magnifying-glass"> 
+              
+            </i> Search</p>
+          
+      
+
+
+
+            </div>
             <div><p><i class="fa-solid fa-user-plus"></i>Login</p></div>
             <div id="get"><p id="get">Get Started</p></div>
         </div>
     </div>
+    <img 
+id="logo" src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg" alt="">
+
+
+
+<div id="searchbar"><input id="hidd" type="text"  placeholder="Type To Search">
+     <h1 id="cross" >   <i class="fa-sharp fa-solid fa-xmark"></i> 
+
+           </h1>
+</div>
+
+         
+
+  
+
     <h1 style=" font-size:40px;font-weight:bold;margin-left: 5%">Plans & Prices</h1>
     <div id="plans">
         <div>
@@ -374,6 +624,10 @@ grid-template-rows: repeat(2,auto);
                         <p> <i class="fa-regular fa-circle-check"></i>
                             Integrated calendar to track timelines</p>
                             <p> <i class="fa-regular fa-circle-check"></i> Easy commenting and collaboration to avoid bottlenecks</p>
+                            <p id="content">Learnt more</p>
+                            p
+                            <p></p>
+                            
                             <button>Try For Free</button>
         
 
@@ -539,48 +793,48 @@ You need to collaborate effortlessly on content strategy, creation and analytics
 </div>
     <h1  style=" font-size:40px;font-weight:bold;margin-left: 5%">Additional Add-on and Upgrades</h1>
     <div id="addon">
+                 <div>
+                     <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_contentintelligence.svg" alt="">
+                      <h2>Recommendations</h2>
+                        <p>Get prescriptive guidance in real-time so you know what content will convert and drive revenue.</p>
+                        <h3>Learn More <i class="fa-solid fa-arrow-right-long"></i></h3>
+                    </div>
+                    <div>
+                        <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_optimizelydataplatform.svg" alt="">
+                         <h2>Customer Data</h2>
+                           <p>Align your entire brand around the customer experience and let us do the heavy lifting of surfacing opportunities, automating tasks and streamlining execution.</p>
+                           <h3>Learn More <i class="fa-solid fa-arrow-right-long"></i></h3>
+                       </div>
+                       <div>
+                        <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_digitalassetmanagement.svg" alt="">
+                         <h2>Digital Asset Management</h2>
+                           <p>Save time, eliminate waste and govern your brand with Library—a digital asset management tool built for marketing content.</p>
+                           <h3>Learn More <i class="fa-solid fa-arrow-right-long"></i></h3>
+                       </div>
+                       <div>
+                        <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_delivra.svg" alt="">
+                         <h2>Email</h2>
+                           <p>Automate your multi-channel campaigns and start seeing boosts in the lifetime value of your prospects. Keep more customers longer.</p>
+                           <h3>Learn More <i class="fa-solid fa-arrow-right-long"></i></h3>
+                       </div>
+                
+                      
+                 </div>
+               
+         <div id="secondlast">
+          <div> 
+            <div><h1>Ready to get started with Optimizely?</h1>
+            <p>You're ready to unlock your digital potential. Ready, Set, GO!</p>
+        </div> 
         <div>
-            <div>
-                <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_contentintelligence.svg" alt="">
-                 <h2>Recommendations</h2>
-                 <p>Get prescriptive guidance in real-time so you know what content will convert and drive revenue.</p>
-                 <h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
-            </div>
-            <div>
-                <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_optimizelydataplatform.svg" alt="">
-                 <h2>Customer Data</h2>
-                 <p>Align your entire brand around the customer experience and let us do the heavy lifting of surfacing opportunities, automating tasks and streamlining execution.</p>
-                 <h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
-            </div>
-            <div>
-                <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_digitalassetmanagement.svg" alt="">
-                 <h2>Digital Assets Management</h2>
-                 <p>Save time, eliminate waste and govern your brand with Library—a digital asset management tool built for marketing content.</p>
-                 <h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
-            </div>
-            <div>
-                <img src="https://www.optimizely.com/globalassets/02.-global-images/product-icons/light-background/opt-product_icon_50px_light_delivra.svg" alt="">
-                 <h2>Email</h2>
-                 <p>Automate your multi-channel campaigns and start seeing boosts in the lifetime value of your prospects. Keep more customers longer.</p>
-                 <h4>Learn More <i class="fa-solid fa-arrow-right-long"></i></h4>
-            </div>
-          
+<button>Get Started</button>
         </div>
-        <div>
-          
-            <div>
-                <h1>Ready to get started with Optimizely?</h1>
-                <p>You're ready to unlock your digital potential. Ready, Set, GO!</p>
-
-            </div>
-            <div>
-                <button>Get Started</button>
-            </div>
-        </div>
-    </div>
-    <div> <a href="index.html"> </a> <img src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_symbol_full-color.svg" alt=""></div>
-
     
+    </div>
+  
+
+         </div> 
+         <div id="lastlogo"> <a href="index.html"> </a> <img src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_symbol_full-color.svg" alt=""></div>        
     <div id="lastbar">
         <div>
   
@@ -654,3 +908,28 @@ You need to collaborate effortlessly on content strategy, creation and analytics
  
 </body>
 </html>
+<script>
+    let s=document.querySelector("#search")
+    s.addEventListener("click",myserach)
+
+    let cross=document.querySelector("#cross")
+    cross.addEventListener("click",mycross)
+    
+    function myserach(){
+        document.querySelector("#navbar").style.display="none"
+
+        document.querySelector("#hidd").style.display="block"
+
+        document.querySelector("#logo").style.display="block"
+
+        document.querySelector("#cross").style.display="block"
+
+    }
+    function mycross(){
+        
+        window.location.reload()
+   
+    }
+        
+    
+</script>
