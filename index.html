@@ -419,7 +419,7 @@ margin:auto;
     color:white
    }
    form>#em>input{
-    width:70%
+    width:80%
    }
    form>div>input{
     margin-top:20px;
@@ -604,12 +604,52 @@ grid-template-columns: repeat(1,1fr);
 }
       }
 
+
+      #hidd{
+    display:none;
+    width:60%;
+    padding:20px;
+    font-size: 20px;
+    margin:auto;
+    background-color: black;
+    outline: #0037fd;
+  
+    margin-left: 10%;
+  
+   
+}
+#logo{
+    display: none;
+    padding:10px
+}
+#cross{
+    display: none;
+    padding-right: 23%;
+    font-size: 60px;
+  
+}
+#searchbar{
+    display:flex;
+    justify-content: center;
+   
+}
      
 
 </style>
 </head>
 <body>
-   
+    <img 
+    id="logo" src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg" >
+    
+    
+    
+    <div id="searchbar"><input id="hidd" type="text"  placeholder="Type To Search">
+         <h1 id="cross" >   <i class="fa-sharp fa-solid fa-xmark"></i> 
+    
+               </h1>
+    </div>
+
+
     <div id="navbar">
         <div id="first" > 
            <div><img src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg" alt="logo">
@@ -627,7 +667,7 @@ grid-template-columns: repeat(1,1fr);
         </div>
         <div id="second">
             <div><p>Support</p> </div>
-            <div><p><i class="fa-solid fa-magnifying-glass"> </i> Search</p></div>
+            <div id="search"><p><i class="fa-solid fa-magnifying-glass"> </i> Search</p></div>
             <div><p><i class="fa-solid fa-user-plus"></i>Login</p></div>
             <div id="get"><p id="get">Get Started</p></div>
         </div>
@@ -929,5 +969,26 @@ grid-template-columns: repeat(1,1fr);
         console.log(arrofdata)
         localStorage.setItem("data",JSON.stringify(arrofdata))
        
+    }
+    let s=document.querySelector("#search")
+    s.addEventListener("click",myserach)
+
+    let cross=document.querySelector("#cross")
+    cross.addEventListener("click",mycross)
+    
+    function myserach(){
+        document.querySelector("#navbar").style.display="none"
+
+        document.querySelector("#hidd").style.display="block"
+
+        document.querySelector("#logo").style.display="block"
+
+        document.querySelector("#cross").style.display="block"
+
+    }
+    function mycross(){
+        
+        window.location.reload()
+   
     }
 </script>
