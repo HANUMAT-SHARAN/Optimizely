@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="http://kit.fontawesome.com/24c494a6b6.js"        crossorigin="anonymous"></script>
+
+    <title>Welcome </title>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <div>
+                <img id="imgw" src="https://accounts.welcomesoftware.com/images/welcome/welcome-optimizely-logo.png" alt="">
+            </div>
+               <div id="signup">
+                <div>
+                    <div id="cont"> <h1>Sign Up</h1>
+                        
+                    </div>
+                    <div id="contsame"> <h1>Login</h1></div>
+                </div>
+                <div><img src="https://bit.ly/3E5HK2L" alt=""> <h2>Login With Google</h2></div>
+                <div><h1>or</h1></div>
+        
+                <div ><input id="inpu" type="email" placeholder="bob@atomicmartketing.com"></div>
+                <div id="cont"><h1>Continue  <i class="fa-solid fa-arrow-right-long"></i></h1></div>
+                <div><h3>By signing up, you agree to the <a href="">Terms</a> & <a href="">Policy.</a> </h3></div>
+               </div>                     
+           
+           
+        </div>
+
+       
+        <div>
+            <div>
+               <div>  <h1>Unleash the potential of your  marketing team with:</h1></div>
+                <div>
+                    <div><svg width="50" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 3a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v26a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3z" fill="#5FEEAD"></path><path d="M15.286 10.286h9.286v1.428h-9.286v-1.428zM7.429 15.286h17.143v1.428H7.428v-1.428zM7.429 20.286v1.428h9.285v-1.428H7.43z" fill="#191932"></path></svg></div>
+                    <div><h3>  One workspace to plan, track & distribute work</h3></div>
+                </div>
+                <div>
+                    <div><svg width="50" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 3a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v26a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3z" fill="#5FEEAD"></path><path d="M15.286 10.286h9.286v1.428h-9.286v-1.428zM7.429 15.286h17.143v1.428H7.428v-1.428zM7.429 20.286v1.428h9.285v-1.428H7.43z" fill="#191932"></path></svg></div>
+                    <div><h3>  Creative tools to produce, edit & proof content</h3></div>
+                </div>
+                <div>
+                    <div><svg width="50" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 3a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v26a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3z" fill="#5FEEAD"></path><path d="M15.286 10.286h9.286v1.428h-9.286v-1.428zM7.429 15.286h17.143v1.428H7.428v-1.428zM7.429 20.286v1.428h9.285v-1.428H7.43z" fill="#191932"></path></svg></div>
+                    <div><h3> Multiple views to visualize campaigns: calendar, timeline, Kanban, lists, & more</h3></div>
+                </div>
+            </div>
+            <div id="flag">
+                <img src="https://accounts.welcomesoftware.com/svgs/illustrations/signup.svg" alt="">
+            </div>
+        </div>
+      
+    </div>
+</body>
+</html>
+<script>
+       let con=document.querySelector("#cont")
+    con.addEventListener("click",myreplace)
+
+    function myreplace(){
+        window.location.replace("signup.html")
+    }
+    let contsame=document.querySelector("#contsame")
+    contsame.addEventListener("click",myreplacesame)
+
+    function myreplacesame(){
+        window.location.replace("login.html")
+    }
+</script>

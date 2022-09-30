@@ -5,579 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plans And Pricing</title>
+    <link rel="stylesheet" href="plans.css">
     <script src="http://kit.fontawesome.com/24c494a6b6.js"        crossorigin="anonymous"></script>
     <style>
-        body{
-        margin:0%;
-        padding: 0%;
-    }
-    #navbar{
-        
-  
-        width:90%;
-        margin:auto;
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,auto);
-
-    }
-    #navbar>div{
-      
-      
-       display:flex;
-      
- 
-
-      
-    }
-    #first{
-        
-     
- 
-        justify-content: space-evenly;
-      
-        font-weight: bold
     
-    }
-    #second{
-      
-        justify-content: space-evenly;
-    
-   
-        font-weight: bold
-       
-    }
-    
-    #second>div{
-        
-     
-        text-align: center;
-    }
-    #get{
-        border-radius:20px;
-        padding:0px 4px 0px 4px;
-    background-color: #0037fd;
-       
-    }
-       
-    
-       
-    
-    #get:hover{
-       
-    }
-    #first>div:hover{
-        text-decoration:underline;
-        color:rgb(47, 1, 211)
-        
-    }
-    #second>div:hover{
-        text-decoration:underline;
-        color:rgb(47, 1, 211)
-        
-    }
-   
-    #plans{
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,500px);
-       
-        width:90%;
-        margin:auto;
-        gap:20px;
-    }
-    #plans>div{
-      
-        line-height: 30px;
-        /* padding-left: 30px; */
-        background-color: #222222;
-        border-radius: 20px;
-    }
-    .color1{
-        width:100%;
-        height:3%;
-       
-        background-color: purple;
-        border-radius: 10px;
-
-    }
-    .color2{
-        width:100%;
-        height:3%;
-       
-        background-color:#ff8110 ;
-        border-radius: 10px;
-
-    }
-    .color3{
-        width:100%;
-        height:3%;
-      
-        background-color:#ffcc00 ;
-        border-radius: 10px;
-
-    }
-    .color4{
-        width:100%;
-        height:3%;
-      
-        background-color:
-#005f8c  ;
-    
-        border-radius: 10px;
-    }
-    .color5{
-        width:100%;
-        height:3%;
-        
-        background-color:#3be081  ;
-    
-        border-radius: 10px;
-    }
-    #plans>div>img{
-        width:20%;
-    }
-    #main{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,auto);
-        
-    }
-    #main>div>img{
-        width:50%;
-    }
-    #main>div{
-      
-        text-align: center;
-    }
-    #plans>div>button{
-font-size: 20px;
-margin-left:35%;
-border-radius: 25px;
-padding: 10px;
-background-color: #0037fd;
-    }
-    #plans>div>button:hover{
-        background-color: blue;
-    }
-    #color6{
-       text-align: center;
-       background-color: 
-#080736;
-    }
-    #color6>div{
-        width:80%;
-        margin:auto;
-        background-color: #080736;
-        
-    }
-   
-    #color6>div>button{
-        
-font-size: 20px;
-
-border-radius: 25px;
-padding: 10px;
-background-color: #0037fd;
-    }
-    #color6>div>button:hover{
-        background-color: blue;
-    }
-    #sol{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,auto);
-        gap:20px;
-        width :90%;
-       margin: auto;
-        background-color: #222222;
-        text-align: left;
-        margin-bottom: 100px;
-    }
-    #big{
-        background-color: #222222;
-        width: 100%;
-        margin-top: 60px;
-      
-        text-align: left;
-        
-     
-     
-
-    }
-    #sol>div{
-        text-align: left;
-        display: flex;
-        line-height: 30px;
-        background-color: #121212 ;
-       
-    }
-    #sol>div>:nth-child(1){
-        text-align: left;
-        width:30%;
-        
-        padding-top: 25px;
-    }
-    #sol>div>:nth-child(2){
-        padding-left: 20px;
-        text-align: left;
-    }
-    #plans+div{
-        background-color:#222222;
-        
-    }
-    #plans+div>h1{
-        margin-left: 60px;
-    }
-  
-    #lastbar{
-    display:grid;
-    grid-template-columns: repeat(1,1fr);
-grid-template-rows: repeat(2,auto);
-
-   }
-   #lastbar>div{
-  
-   }
-   #lastbar>:nth-child(1){
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(1,auto);
-    gap:20px;
-    background-color: #080736 ;
-   }
-   #lastbar>:nth-child(1)>div{
- 
-    line-height: 25px;
-    padding-left:30px;
-    
-   }
-   #formbox+div>img{
-    height:100px
-   }
-   #formbox+div{
-    background-color: #080736 ;
-   }
- 
-   
-   #addon+div>img{
-    height:100px
-   }
-   #addon+div{
-    background-color: #080736 ;
-   }
-   #lastbar{
-    display:grid;
-    grid-template-columns: repeat(1,1fr);
-grid-template-rows: repeat(2,auto);
-margin:auto;
-
-   }
-   #lastbar>div{
-  
-   }
-   #lastbar>:nth-child(1){
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(1,auto);
-    gap:20px;
-    background-color: #080736 ;
-   }
-   #lastbar>:nth-child(1)>div{
- 
-    line-height: 25px;
-    padding-left:30px;
-    
-   }
-   #formbox+div>img{
-    height:100px
-   }
-   #formbox+div{
-    background-color: #080736 ;
-   }
-   #lastbar>:nth-child(1)>div>p:hover{
- 
-        text-decoration:underline;
-        color:rgb(47, 1, 211)
-        
-    
-   }
-  #lastbar>div{
-
-   }
-   #last{
-
-    width: 100%;
-    display:flex
-    
-   }
-   #last>div{
-
-     width:50%;
-;
-    display:flex;
-   
-  
-    background-color: #393a5d;
-    
-   }
-   #addon{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(1,auto);
-    gap:20px;
-    
-    padding:30px;
-
-
-   }
-   #addon>div{
- 
-    width:90%;
-
-
-    
-   }
-   #addon>div>p{
-    line-height: 25px;
-   }
-  
-   
-   #addon>div>img{
-   
-    width:20%;
-   }
-   #addon>div{
-
-   }
- 
-   #last>div:nth-child(2){
- 
-    justify-content: space-around;
-
-   }
- 
-   @media all  and (min-width:320px) and (max-width:768px){
-    #plans{
-        display:grid;
-        grid-template-columns: repeat(1,1fr); 
-        grid-template-rows: repeat(6,600px);
-        width:100%;
-        padding-left:90px;
-        gap:20px;
-    }
-    #navbar{
-        
-  
-        
-     
-        grid-template-columns: repeat(1,1fr);
-       
-
-    }
-    #big{
-        background-color: #222222;
-        width: 100%;
-        margin-top: 60px;
-      
-        text-align: left;
-        margin-left:80px
-     
-     
-
-    }
-    #addon{
-    display:grid;
-    grid-template-columns: repeat(1,1fr);
-   
-    gap:20px;
-    
-    padding:80px;
-
-
-   }
- 
-    #sol{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-     
-        gap:20px;
-        width :90%;
-        padding-left:25px;
-        background-color: #222222;
-        text-align: left;
-    }
-    #lastbar{
-
-grid-template-columns: repeat(1,1fr);
-
-
-}
-   
-   }
-
-   @media all and (min-width:769px) and (max-width:1024px){
-    #plans{
-        display:grid;
-        grid-template-columns: repeat(1,1fr); 
-        grid-template-rows: repeat(6,600px);
-        width:100%;
-        padding-left:90px;
-        gap:20px;
-    }
-    #lastbar{
-
-grid-template-columns: repeat(1,1fr);
-
-
-}
-    #navbar{
-        
-  
-        
-     
-        grid-template-columns: repeat(1,1fr);
-       
-
-    }
-    #addon{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    
-    gap:20px;
-    
-    padding:80px;
-
-
-   }
-  
-    #big{
-        background-color: #222222;
-        width: 100%;
-        margin-top: 60px;
-      
-        text-align: left;
-        margin-left:80px
-     
-     
-
-    }
-    #sol{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-     
-        gap:20px;
-        width :90%;
-        padding-left:25px;
-        background-color: #222222;
-        text-align: left;
-    }
-  
-   }
-   .searchtext{
-    width:100%;
-    padding:10%;
-    font-size: 15px;
-border:1px solid ;
-border-radius: 15px;
-transition: all 0.1s linear;
-   }
-/* 
-   #search:hover>.searchtext{
-    width:150%;
-    padding:20px;
-   } */
-
-
-#hidd{
-    display:none;
-    width:60%;
-    padding:20px;
-    font-size: 20px;
-    margin:auto;
-    background-color: black;
-    outline: #0037fd;
-  
-    margin-left: 10%;
-  
-   
-}
-#logo{
-    display: none;
-    padding:10px
-}
-#cross{
-    display: none;
-    padding-right: 23%;
-    font-size: 60px;
-  
-}
-#searchbar{
-    display:flex;
-    justify-content: center;
-   
-}
-#secondlast{
-  
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1,300px);
-background-color: #0037fd;
-    
-
-}
-#secondlast>div{
-     background-color: #ffcc00; 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 15px;
-    
-  
-    
-  
-    
-}
-#secondlast>div>:nth-child(2)>button{
-        
-        font-size: 20px;
-        
-        border-radius: 25px;
-        padding: 10px;
-        background-color: #0037fd;
-            }
-
-            #secondlast>div>:nth-child(2)>button:hover{
-                background-color: blue;
-            }
-            #lastlogo{
-                background-color:#080736
-            }
-  #lastlogo>img{
-    width: 5%;
-  }
     
     </style>
 </head>
 <body>
+ 
+
+
+
     <div id="navbar">
         <div id="first" > 
            <div> <a href="index.html">  <img  src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg" alt="logo"></a>
             
            </div>
-           <div> <p>Products</p>
+           <div> <p><a href="">Products</a>
+
+           </p>
            </div>
-           <div> <p>Plans</p></div>
-           <div><p>Resources</p></div>
-           <div> <p>Partners</p></div>
+           <div> <p> <a href="plans.html"> Plans</a></p></div>
+           <div><p><a href="">Resources</a></p></div>
+           <div> <p> <a href="">Partners</a> </p></div>
 
 
         </div>
         <div id="second">
     
 
-            <div><p>Support</p> </div>
-            <div id="search">  <p>  
+            <div><p><a href="">Support</a></p> </div>
+            <div id="search" color="white">  <p style="color:white">  
 
                 <i class="fa-solid fa-magnifying-glass"> 
               
@@ -588,8 +47,8 @@ background-color: #0037fd;
 
 
             </div>
-            <div><p><i class="fa-solid fa-user-plus"></i>Login</p></div>
-            <div id="get"><p id="get">Request Pricing</p></div>
+            <div id="login"  ><p style="color:white"><i class="fa-solid fa-user-plus"></i> Login</p></div>
+            <div id="get"><p id="get"> <a href="">Request Pricing</a></p></div>
         </div>
     </div>
     <img 
@@ -597,11 +56,38 @@ id="logo" src="https://www.optimizely.com/globalassets/02.-global-images/navigat
 
 
 
-<div id="searchbar"><input id="hidd" type="text"  placeholder="Type To Search">
+<div id="searchbar"><input id="hidd" type="text"  placeholder="Type To Search" list="input">
+   
+<datalist id="input">
+    <option value="Content Manager">
+    <option value="Web A/B Testing">
+    <option value="Feature Management">
+    <option value="Commerce">
+    <option value="Solutions">
+        <option value="Intelligent Content">
+            <option value="Adaptive Commerce">
+                <option value="Digital Optimisation">
+                    <option value="Headless Experience">
+        <option value="Additional Add On"></option>
+</datalist>
+   
      <h1 id="cross" >   <i class="fa-sharp fa-solid fa-xmark"></i> 
+      
+
 
            </h1>
 </div>
+
+<div id="logintext">
+    <p style="color:white">Where To?</p>
+    <h3 id="signup">Signup  <i class="fa-solid fa-arrow-right-long"></i></h3>
+    <h3 id="loginmain">Welcome  <i class="fa-solid fa-arrow-right-long"></i></h3>
+    <h3>Email Campaign  <i class="fa-solid fa-arrow-right-long"></i></h3>
+    <h3>Data Platform  <i class="fa-solid fa-arrow-right-long"></i></h3>
+    <h3>Partner <i class="fa-solid fa-arrow-right-long"></i></h3>
+</div>
+
+
 
          
 
@@ -625,9 +111,7 @@ id="logo" src="https://www.optimizely.com/globalassets/02.-global-images/navigat
                         <p> <i class="fa-regular fa-circle-check"></i>
                             Integrated calendar to track timelines</p>
                             <p> <i class="fa-regular fa-circle-check"></i> Easy commenting and collaboration to avoid bottlenecks</p>
-                            <p id="content">Learnt more</p>
-                            p
-                            <p></p>
+                          
                             
                             <button>Try For Free</button>
         
@@ -910,11 +394,28 @@ You need to collaborate effortlessly on content strategy, creation and analytics
 </body>
 </html>
 <script>
+
+
+
     let s=document.querySelector("#search")
     s.addEventListener("click",myserach)
 
     let cross=document.querySelector("#cross")
     cross.addEventListener("click",mycross)
+
+    let login=document.querySelector("#login")
+login.addEventListener("click",mylogin)
+
+    let lo=document.querySelector("#login")
+    lo.addEventListener("dblclick",mynormal)
+
+
+    let signup=document.querySelector("#signup")
+    signup.addEventListener("click",mysignup)
+
+    let loginmain=document.querySelector("#loginmain")
+    loginmain.addEventListener("click",mylog)
+
     
     function myserach(){
         document.querySelector("#navbar").style.display="none"
@@ -928,9 +429,27 @@ You need to collaborate effortlessly on content strategy, creation and analytics
     }
     function mycross(){
         
-        window.location.reload()
+        window.location.replace("plans.html")
    
     }
-        
+
+    function mylogin(){
+        document.querySelector("#logintext").style.display="block"
+    }
+
+
+    function mynormal(){
+document.querySelector("#logintext").style.display="none"
+    }
+
+
+        function mysignup(){
+            window.location.replace("signup.html")
+        }
+
+
+     function mylog(){
+        window.location.replace("login.html")
+     }
     
 </script>
