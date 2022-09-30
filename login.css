@@ -1,0 +1,87 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+#main{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap:20px;
+
+}
+
+#main>div{
+
+    text-align: center;
+   
+}
+#signup{
+    display: grid;
+ 
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,80px);
+    gap:20px;
+  
+    height: 100%;
+    margin-top: 40px;
+   
+
+}
+#signup>div{
+  
+    width:50%;
+    display: flex;
+    /* text-decoration: underline; */
+    justify-content: space-around;
+    /* margin:auto; */
+    text-align: center;
+    
+   margin-left: 150px;
+   border-radius: 10px;
+ 
+}
+#signup>:nth-child(1)>:nth-child(2){
+    color:#db8cff;
+   text-decoration: underline;
+}
+#inpu{
+    font-size: 20px;
+    border-radius: 5px;
+    padding:0px 15px 0px 18px;
+}
+#imgw{
+    width:50%;
+    margin-top: 40px;
+}
+#signup>div:nth-child(5){
+    background-color: #411e74;
+}
+
+
+#signup>div:nth-child(2){
+    background-color: black;
+}
+#signup>div:nth-child(2):hover{
+    background-color: white;
+}
+#main>div:nth-child(2){
+    background-color: #5420a2;
+    padding-left: 80px;
+   
+}
+#main>div:nth-child(2)>div{
+    width:80%;
+    text-align: left;
+
+
+}
+#main>div:nth-child(2)>div>div{
+    display: flex;
+    padding:20px;
+    justify-content: space-between;
+   
+}
+#main>div:nth-child(2)>div>div>div:nth-child(1){
+  margin:auto;
+  
+}

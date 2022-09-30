@@ -5,633 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Optimizely</title>
+    <link rel="stylesheet" href="index.style.css">
     <script src="http://kit.fontawesome.com/24c494a6b6.js"        crossorigin="anonymous"></script>
 <style>
     
-    body{
-        margin:0%;
-        padding: 0%;
-    }
-    #navbar{
-        
-  
-        width:90%;
-        margin:auto;
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,auto);
-
-    }
-    #navbar>div{
-      
-      
-       display:flex;
- 
-
-      
-    }
-    #first{
-        
-     
- 
-        justify-content: space-evenly;
-      
-        font-weight: bold
-    
-    }
-    #second{
-      
-        justify-content: space-evenly;
-    
-   
-        font-weight: bold
-       
-    }
-    
-    #second>div{
-        
-     
-        text-align: center;
-    }
-    #get{
-        border-radius:20px;
-        padding:0px 4px 0px 4px;
-    background-color: #0037fd;
-       
-    }
-    #get:hover{
-       
-    }
-    #first>div:hover{
-        text-decoration:underline;
-        color:rgb(47, 1, 211)
-        
-    }
-    #second>div:hover{
-        text-decoration:underline;
-        color:rgb(47, 1, 211)
-        
-    }
-    
-   
-    #unlock{
-        width:90%;
-      
-     
-        margin:auto;
-        margin-top:1%;
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,auto);
-    }
-    #unlock>div{
-  
-      
-    }
-    #unlock h1{
-        font-size: 70px;
-    }
-    #unlock p{
-        font-size:25px;
-        line-height:35px
-    }
-   
-   
-    
-    #video{
-      
-      
-        width:100%;
-        margin-top:1%;
-   
-        border-radius: 15px;
-        margin-left:70px
-       
-        
-    }
-    #company{
-        width:90%;
-        
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(2,auto);
-        gap:20px;
-    }
-    #company>div{
-   
-        text-align: center;
-    }
-    #moco>img{
-        width :50%;
-    }
-    #stories{
-        margin: auto;
-        
-        width: 25%;
-        margin-top: 20px;
-
-    }
-    #stories>button{
-        font-size: 15px;
-        border-radius: 25px;
-        margin-left:70px;
-        color:
-#9e8ae9;
-        text-align: center;
-        padding:11px 32px;
-        
-        background-color: #0e1941
-     
-    }
-    #stories>button:hover{
-        background-color:#0037fd ;
-        color:white;
-    }
-    #digital{
-      
-      width:90%;
-        display:grid;
-       
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,400px);
- margin:auto;
-     
-        margin-top:80px;
-        
-    }
-    #digital:nth-child(1){
- margin:auto;
-    }
-    #digital>div{
-      
-       
-         background-color:#080736;
-    }
-    #digital>#h{
-   text-align:center;
-        background-color:#0037fd;
-       
-     
-    }
-    #digital>#blue>div{
-        text-align: center
-        ;
-
-height:70%
-    }
-   
-    
-    
-   
-  
-   #digital>#h>div>p{
-    font-size: 20px;
-    line-height:30px;
-   }
-   #cat{
-    
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1,auto);
-    margin:auto;
-    background-color:#861dff;
-    width:90%;
-    gap:70px;
-   
-   }
- 
-    #cat1{
-       
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(5,auto);
-    gap:10px;
-    width:60%;
-    margin:auto;
- 
-    
-    }
-    #cat1>div{
-      
-        text-align: center;
-        border-radius: 15px;
-        background-color:#861dff;
-        border:3px solid blue;
-        text-align: center;
-        
-    }
-    #cat1>div:hover{
-        background-color:black
-    } 
-    #cms{
-        display: flex;
-        justify-content: space-evenly;
-      
-    }
-    #cms>div{
-       
-        border-radius: 15px;
-        border:3px solid blue;
-        width:40%
-    }
-    #cms>div:hover{
-        background-color:#0037ff;
-    }
-    #multi{
-        display: flex;
-       justify-content: space-evenly;
-      
-    }
-    #multi>div{
-        
-        border-radius: 15px;
-        
-        border:3px solid blue
-      
-    }
-    #multi>div:hover{
-        background-color: #0037fd;
-        
-    }
-    #video+h1{
-        text-align: center;
-    }
-    #cat h1{
-        text-align: center;
-    }
-
-    #latest{
-     
-    
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(1,auto);
-        gap:20px;
-        width:90%;
-        margin:auto;
-  
-   
-    }
-    #latest>div{
-     
-        line-height: 25px;
-       
-    }
-    #change{
-        
-        width:90%;
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(1,500px);
-        gap:20px;
-        margin:auto;
-        margin-top: 50px;
-    }
-    #change>div{
-
-        
-    
-        background-color: #080736;
-        padding-left: 60px;
-        padding-top: 40px;
-    }
-    #change h1{
-        font-size: 50px;
-        color: yellow;
-    }
-    #change>:nth-child(2){
-        background-color: #861dff;
-    }
-    #change>:nth-child(3){
-        background-color: #0037ff;
-    }
-    #change p{
-        font-size: 20px;
-    }
-    #formbox{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,500px);
-        gap:20px;
-        width: 90%;
-        margin:auto;
-        margin-top:40px;
-        margin-bottom:40px
-      
-        
-    }
-    #formbox>div{
-      
-        line-height: 30px;
-    }
-    #formbox>:nth-child(1){
-background-color:   #080736;
-padding-left: 60px;
-
-    }
- 
-    #formbox>:nth-child(2){
-        background-color:#3be081;
-      
-        text-align: center;
-    } 
-   
-   #submit{
-    font-size: 18px;
-    /* margin-left: 25%; */
-    margin-top: 20px;
-    border-radius: 25px;
-    background-color:#0037ff;
-    padding:11px 32px
-    
-   }
-   #submit:hover{
-    font-size: 25px;
-    background-color: blue;
-   }
-   #lastbar{
-    display:grid;
-    grid-template-columns: repeat(1,1fr);
-grid-template-rows: repeat(2,auto);
-margin:auto;
-
-   }
-   #lastbar>div{
-  
-   }
-   #lastbar>:nth-child(1){
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(1,auto);
-    gap:20px;
-    background-color: #080736 ;
-   }
-   #lastbar>:nth-child(1)>div{
- 
-    line-height: 25px;
-    padding-left:30px;
-    
-   }
-   #formbox+div>img{
-    height:100px
-   }
-   #formbox+div{
-    background-color: #080736 ;
-   }
-   #lastbar>:nth-child(1)>div>p:hover{
- 
-        text-decoration:underline;
-        color:rgb(47, 1, 211)
-        
-    
-   }
-  #lastbar>div{
-
-   }
-   #last{
-
-    width: 100%;
-    display:flex
-    
-   }
-   #last>div{
-
-     width:50%;
-;
-    display:flex;
-   
-  
-    background-color: #393a5d;
-    
-   }
-   #last>div:nth-child(2){
- 
-    justify-content: space-around;
-
-   }
-   #cat+h1{
-   margin-left: 70px;
-   }
-   a{
-    text-decoration: none;
-    color:white
-   }
-   form>#em>input{
-    width:80%
-   }
-   form>div>input{
-    margin-top:20px;
-    padding:15px;
-    font-size: 15px;
-    background-color: #3be081;
-    border-radius: 15px;
-
-   }
-   form>div>input:hover{
-    background-color: black;
-    /* font-size: 20px; */
-   }
-
-    @media all and (min-width:320px) and (max-width:768px){
-    #formbox{
-      
-        grid-template-columns: repeat(1,1fr);
-       
- 
-    }
-    form>#em>input{
-    width:50%
-    }
-    #video{
-      
-      
-      width:70%;
-      margin-top:1%;
- 
-      border-radius: 15px;
-      margin-left:70px
-     
-      
-  }
-    #navbar{
-        
-  
-        
-     
-        grid-template-columns: repeat(1,1fr);
-       
-
-    }
-    #company{
-      
-        grid-template-columns: repeat(2,1fr);
-      
-    }
-    #digital{
-      
-      width:100%;
-      grid-template-columns: repeat(1,1fr);
-  
-      
-  }
-    #cat{
-    
-    width:100%;
-    padding-left:20px;
-    grid-template-columns: repeat(1,1fr);
-
-   
-   }
-    #change{
-        
-    
-        grid-template-columns: repeat(1,1fr);
-      
-       
-   }
-   #lastbar{
-
-    grid-template-columns: repeat(1,1fr);
-
-
-   }
-   #digital{
-      
-      margin:10px;
-      grid-template-columns: repeat(1,1fr);
-    
-      
-  }
-   #unlock{
-     
-        grid-template-columns: repeat(1,1fr);
-       
-    }
-    #latest{
-  
-  grid-template-columns: repeat(1,1fr);
-
-
-}
-
-   }
-
-
-
-   @media all and (min-width: 769px) and (max-width: 1024px) {
-    #formbox{
-      
-      grid-template-columns: repeat(1,1fr);
-    
-
-  }
-  #unlock{
-     
-     grid-template-columns: repeat(1,1fr);
-    
- }
-  form>#em>input{
-    width:62%
-    }
-  #video{
-      
-      
-      width:70%;
-      margin-top:1%;
- 
-      border-radius: 15px;
-      margin-left:70px
-     
-      
-  }
-  #navbar{
-        
-  
-        
-     
-        grid-template-columns: repeat(1,1fr);
-       
-
-    }
-  #latest{
-  
-     grid-template-columns: repeat(1,1fr);
-  
-   
- }
- #company{
-      
-      grid-template-columns: repeat(2,1fr);
-    
-  }
-  #digital{
-      
-      
-      grid-template-columns: repeat(1,1fr);
-  
-      
-  }
-  #cat{
-    
-
-    
-    
-    width:100%;
-    padding-left:20px;
-    grid-template-columns: repeat(1,1fr);
-
-   
-   
-   
-
-  
-   
-   }
-  #change{
-      
-  
-      grid-template-columns: repeat(1,1fr);
-  
-     
- }
- #lastbar{
-
-grid-template-columns: repeat(1,1fr);
-
-
-}
-      }
-
-
-      #hidd{
-    display:none;
-    width:60%;
-    padding:20px;
-    font-size: 20px;
-    margin:auto;
-    background-color: black;
-    outline: #0037fd;
-  
-    margin-left: 10%;
-  
-   
-}
-#logo{
-    display: none;
-    padding:10px
-}
-#cross{
-    display: none;
-    padding-right: 23%;
-    font-size: 60px;
-  
-}
-#searchbar{
-    display:flex;
-    justify-content: center;
-   
-}
      
 
 </style>
@@ -642,34 +19,55 @@ grid-template-columns: repeat(1,1fr);
     
     
     
-    <div id="searchbar"><input id="hidd" type="text"  placeholder="Type To Search">
+    <div id="searchbar"><input id="hidd" type="text"  placeholder="Type To Search" list="input">
          <h1 id="cross" >   <i class="fa-sharp fa-solid fa-xmark"></i> 
+              
+<datalist id="input">
+    <option value="Content Manager">
+    <option value="Web A/B Testing">
+    <option value="Feature Management">
+    <option value="Commerce">
+    <option value="Solutions">
+        <option value=" Content">
+            <option value="Adaptive Commerce">
+                <option value=" Optimisation">
+                    <option value="Latest Insights>
+        <option value="Additional Add On"></option>
+</datalist>
     
                </h1>
     </div>
-
+ 
 
     <div id="navbar">
         <div id="first" > 
            <div><img src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg" alt="logo">
             
            </div>
-           <div> <p>Products</p>
+           <div> <p><a href="">Products</a></p>
            </div>
            <div> 
-            <p><a  href="prices.html"> Plans</a> </p>
+            <p><a  href="plans.html">Plans</a> </p>
         </div>
-           <div><p>Resources</p></div>
-           <div> <p>Partners</p></div>
+           <div><p><a href="">Resources</a></p></div>
+           <div> <p><a href="">Partner</a></p></div>
 
 
         </div>
         <div id="second">
-            <div><p>Support</p> </div>
-            <div id="search"><p><i class="fa-solid fa-magnifying-glass"> </i> Search</p></div>
-            <div><p><i class="fa-solid fa-user-plus"></i>Login</p></div>
-            <div id="get"><p id="get">Get Started</p></div>
+            <div><p><a href="">Support</a></p> </div>
+            <div id="search"><p><i class="fa-solid fa-magnifying-glass"> </i> <a href="">Search</a></p></div>
+            <div id="login"><p><i class="fa-solid fa-user-plus"></i><a href="">Login</a></p></div>
+            <div id="get"><p id="get"><a href="">Get Started</a> </p></div>
         </div>
+    </div>
+    <div id="logintext">
+        <p style="color:white">Where To?</p>
+        <h3 id="signup">Signup  <i class="fa-solid fa-arrow-right-long"></i></h3>
+        <h3 id="loginmain">Welcome  <i class="fa-solid fa-arrow-right-long"></i></h3>
+        <h3>Email Campaign  <i class="fa-solid fa-arrow-right-long"></i></h3>
+        <h3>Data Platform  <i class="fa-solid fa-arrow-right-long"></i></h3>
+        <h3>Partner <i class="fa-solid fa-arrow-right-long"></i></h3>
     </div>
     <div id="unlock">
         <div>
@@ -972,8 +370,35 @@ grid-template-columns: repeat(1,1fr);
     let s=document.querySelector("#search")
     s.addEventListener("click",myserach)
 
+
+
     let cross=document.querySelector("#cross")
     cross.addEventListener("click",mycross)
+
+
+
+    let login=document.querySelector("#login")
+login.addEventListener("click",mylogin)
+
+
+
+
+    let lo=document.querySelector("#login")
+    lo.addEventListener("dblclick",mynormal)
+
+
+
+
+    let signup=document.querySelector("#signup")
+    signup.addEventListener("click",mysignup)
+
+
+
+
+    let loginmain=document.querySelector("#loginmain")
+    loginmain.addEventListener("click",mylog)
+
+    
     
     function myserach(){
         document.querySelector("#navbar").style.display="none"
@@ -987,7 +412,25 @@ grid-template-columns: repeat(1,1fr);
     }
     function mycross(){
         
-        window.location.reload()
+        window.location.replace("index.html")
    
     }
+
+
+    function mylogin(){
+        document.querySelector("#logintext").style.display="block"
+    }
+
+
+    function mynormal(){
+document.querySelector("#logintext").style.display="none"
+    }
+
+    
+        function mysignup(){
+            window.location.replace("signup.html")
+        }
+     function mylog(){
+        window.location.replace("login.html")
+     }
 </script>
