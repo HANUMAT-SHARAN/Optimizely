@@ -47,9 +47,11 @@ body{
     text-align: center;
 }
 #get{
-    border-radius:20px;
-    padding:0px 4px 0px 4px;
+    border-radius:25px;
+    padding:2px 30px;
 background-color: #0037fd;
+color:white;
+
    
 }
 #get:hover{
@@ -87,6 +89,9 @@ background-color: #0037fd;
 #unlock p{
     font-size:25px;
     line-height:35px
+}
+#get1 a{
+    color:white;
 }
 
 
@@ -129,12 +134,12 @@ background-color: #0037fd;
     font-size: 15px;
     border-radius: 25px;
     margin-left:70px;
-    color:
-#9e8ae9;
+    color:blue;
+    font-weight: bold;
     text-align: center;
-    padding:11px 32px;
+    padding:15px 32px;
     
-    background-color: #0e1941
+    background-color: #ccd7ff 
  
 }
 #stories>button:hover{
@@ -143,7 +148,7 @@ background-color: #0037fd;
 }
 #digital{
   
-  width:90%;
+  width:100%;
     display:grid;
    
     grid-template-columns: repeat(2,1fr);
@@ -158,7 +163,7 @@ margin:auto;
 }
 #digital>div{
   
-   
+   color:white;
      background-color:#080736;
 }
 #digital>#h{
@@ -168,7 +173,8 @@ text-align:center;
  
 }
 #digital>#blue>div{
-    text-align: center
+    text-align: center;
+    color:white;
     ;
 
 height:70%
@@ -181,16 +187,19 @@ height:70%
 #digital>#h>div>p{
 font-size: 20px;
 line-height:30px;
+color:white;
 }
 #cat{
 
 display: grid;
 grid-template-columns: repeat(3,1fr);
-grid-template-rows: repeat(1,auto);
+grid-template-rows: repeat(1,500px);
 margin:auto;
 background-color:#861dff;
-width:90%;
+width:100%;
 gap:70px;
+color:white;
+
 
 }
 
@@ -199,23 +208,32 @@ gap:70px;
 display: grid;
 grid-template-columns: repeat(1,1fr);
 grid-template-rows: repeat(5,auto);
-gap:10px;
+gap:5px;
 width:60%;
 margin:auto;
 
 
+}
+#second p{
+color:black;
+}
+#get p{
+    color:white
 }
 #cat1>div{
   
     text-align: center;
     border-radius: 15px;
     background-color:#861dff;
-    border:3px solid blue;
+    border:2px solid white;
     text-align: center;
+    font-weight: bold;
     
 }
 #cat1>div:hover{
-    background-color:black
+    background-color:white;
+    color:#861dff;
+    font-weight: bold;
 } 
 #cms{
     display: flex;
@@ -225,11 +243,12 @@ margin:auto;
 #cms>div{
    
     border-radius: 15px;
-    border:3px solid blue;
-    width:40%
+    border:1px solid white;
+    width:50%
 }
 #cms>div:hover{
-    background-color:#0037ff;
+    background-color:blue;
+    color: white;
 }
 #multi{
     display: flex;
@@ -240,15 +259,18 @@ margin:auto;
     
     border-radius: 15px;
     
-    border:3px solid blue
+    border:1px solid white
   
 }
 #multi>div:hover{
-    background-color: #0037fd;
+    background-color: blue;
+    color:white;
     
 }
 #video+h1{
     text-align: center;
+    font-weight: bold;
+    font-size: 40px;
 }
 #cat h1{
     text-align: center;
@@ -310,9 +332,22 @@ margin:auto;
     width: 90%;
     margin:auto;
     margin-top:40px;
-    margin-bottom:40px
+    margin-bottom:40px;
+    color:white;
   
     
+}
+#change p{
+    color:white;
+}
+#latest h3{
+    color:#0339ff 
+}
+#latest h2:hover{
+    color:#0039ff
+}
+#latest h3:hover{
+    color:black;
 }
 #formbox>div{
   
@@ -326,8 +361,8 @@ padding-left: 60px;
 
 #formbox>:nth-child(2){
     background-color:#3be081;
-  
-    text-align: center;
+    padding-left:40px;
+    text-align: left;
 } 
 
 #submit{
@@ -336,7 +371,9 @@ font-size: 18px;
 margin-top: 20px;
 border-radius: 25px;
 background-color:#0037ff;
-padding:11px 32px
+padding:11px 32px;
+color:white;
+
 
 }
 #submit:hover{
@@ -348,6 +385,7 @@ display:grid;
 grid-template-columns: repeat(1,1fr);
 grid-template-rows: repeat(2,auto);
 margin:auto;
+color:white;
 
 }
 #lastbar>div{
@@ -375,7 +413,7 @@ background-color: #080736 ;
 #lastbar>:nth-child(1)>div>p:hover{
 
     text-decoration:underline;
-    color:rgb(47, 1, 211)
+    color:white;
     
 
 }
@@ -408,7 +446,7 @@ margin-left: 70px;
 }
 a{
 text-decoration: none;
-color:white
+color:black
 }
 form>#em>input{
 width:80%
@@ -420,11 +458,14 @@ font-size: 15px;
 background-color: #3be081;
 border-radius: 15px;
 
+
 }
 form>div>input:hover{
-background-color: black;
+background-color: yellow; 
 /* font-size: 20px; */
+color:black;
 }
+
 
 @media all and (min-width:320px) and (max-width:768px){
 #formbox{
@@ -603,8 +644,11 @@ width:60%;
 padding:20px;
 font-size: 20px;
 margin:auto;
-background-color: black;
+background-color: white;
+border-radius: 15px;
 outline: #0037fd;
+font-weight: bold;
+border:15px solid  #0037fd;
 
 margin-left: 10%;
 
@@ -616,31 +660,38 @@ padding:10px
 }
 #cross{
 display: none;
-padding-right: 23%;
-font-size: 60px;
+padding-right: 20%;
+font-size: 100px;
+color:black;
+font-weight: bold;
 
 }
 #searchbar{
 display:flex;
-
+color:white;
 justify-content: center;
+background-color: white;
 
 }
 #logintext{
   
     display:none;
  position: absolute;
- border-radius: 15px;
- background-color: black;
+
+
  width:15%;
  height: 300px;
 margin: auto;
 margin-left:70%;
 padding-top: 10px;
 padding-left:30px;
-background-color: #222222;
-color:#8b79c5 ;
+background-color: white;
+color:#083dff  ;
 box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
 
+}
+#logintext h3:hover{
+    color: black;
+ 
 }

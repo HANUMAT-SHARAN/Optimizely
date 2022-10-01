@@ -16,9 +16,9 @@
 
         <div>
             <h1>Thank You For Choosing <i>Wecome!</i></h1>
-            <h3>We have sent you an confirmation email to zd@masaischool.com.
+            <h3>We have sent you an confirmation email to <i> <h1 style="font-size:bold;" id="emailyou"></h1></i>
                 Please check your inbox and follow the link to complete your registration.</h3>
-<h3>Go To Your Inbox</h3>
+
         </div>
   
         
@@ -36,7 +36,7 @@
             <h3> If You have any Questions Please <a href="">contact us</a></h3>
             <h3>Dont See the email in your inbox? </h3>
             <div>
-                <h3>Resend Email</h3>
+                <h3 id="resendemail">LOGIN</h3>
             </div>
 
         </div>
@@ -50,5 +50,18 @@
     </div>
 </body>
 </html>
+<script>
+ 
+  let em=(localStorage.getItem("data"))
+  document.querySelector("#emailyou").innerText=em
+
+  let re=document.querySelector("#resendemail")
+  re.addEventListener("click",myresend)
+  
+  function myresend(){
+    window.location.replace("login.html")
+  }
+
+</script>
 
     

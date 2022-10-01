@@ -31,8 +31,8 @@
         <option value=" Content">
             <option value="Adaptive Commerce">
                 <option value=" Optimisation">
-                    <option value="Latest Insights>
-        <option value="Additional Add On"></option>
+                    <option value=" Addional Add On Upgrade">
+       
 </datalist>
     
                </h1>
@@ -41,7 +41,7 @@
 
     <div id="navbar">
         <div id="first" > 
-           <div><img src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg" alt="logo">
+           <div><a href="index.html"><img src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg" alt="logo"></a>
             
            </div>
            <div> <p><a href="">Products</a></p>
@@ -56,13 +56,13 @@
         </div>
         <div id="second">
             <div><p><a href="">Support</a></p> </div>
-            <div id="search"><p><i class="fa-solid fa-magnifying-glass"> </i> <a href="">Search</a></p></div>
-            <div id="login"><p><i class="fa-solid fa-user-plus"></i><a href="">Login</a></p></div>
-            <div id="get"><p id="get"><a href="">Get Started</a> </p></div>
+            <div id="search"><p ><i class="fa-solid fa-magnifying-glass"> </i> Search</p></div>
+            <div id="login"><p ><i class="fa-solid fa-user-plus"></i> Login</p></div>
+            <div id="get"><p style="color:white" id="get1"><a href="">Get Started</a> </p></div>
         </div>
     </div>
     <div id="logintext">
-        <p style="color:white">Where To?</p>
+        <p style="color: black; font-weight: bold;">Where To?</p>
         <h3 id="signup">Signup  <i class="fa-solid fa-arrow-right-long"></i></h3>
         <h3 id="loginmain">Welcome  <i class="fa-solid fa-arrow-right-long"></i></h3>
         <h3>Email Campaign  <i class="fa-solid fa-arrow-right-long"></i></h3>
@@ -89,7 +89,7 @@
 <!-- <iframe allowfullscreen="" src="//view.ceros.com/optimizely/homepage-clip?heightOverride=366" style="position: absolute; inset: 0px; margin: 0px auto; padding: 0px; border: 0px none; height: 100px; width: 100%; min-height: 100%; min-width: 100%; max-width: 1238px;" frameborder="0" class="ceros-experience" title="Homepage banner" scrolling="no" data-ceros-subpixel-oversize="true" data-ceros-subpixel-original-width="1px" data-ceros-subpixel-original-height="1px"></iframe> 
              -->
   
-    <h1>Trusted by 9,000+ businesses and millions of happy customers </h1>
+    <h1 >Trusted by 9,000+ businesses and millions of happy customers </h1>
     <div id="company">
        
            <div>
@@ -226,16 +226,19 @@
         <div>
             <img src="https://www.optimizely.com/contentassets/90461ceea0184877b2c559273cd1da58/blue-apron_logo.svg" alt="">
             <h1>10X</h1>
-            <p>Increase Engagement On Site</p>
+            <p>
+                Increase in experiments run per month after adopting Optimizely</p>
             <h1>100%</h1>
-            <p>Unique Vistors with 2 months of launch</p>
+            <p>Number of product teams using experimentation</p>
         </div>
         <div>
             <img src="https://www.optimizely.com/contentassets/90461ceea0184877b2c559273cd1da58/farfetch_logo.svg" alt="">
             <h1>2X</h1>
-            <p>Increase Engagement On Site</p>
+            <p>
+                Experimentation community has enlarged from 80 to 170 participants</p>
             <h1>20-50</h1>
-            <p>Unique Vistors with 2 months of launch</p>
+            <p>
+                Experiments running each month by the experimentation team</p>
         </div>
        
     </div>
@@ -257,7 +260,7 @@
             </ul>
         </div>
         <div>
-            <h1>First, we need to know a couple of things about you</h1>
+            <h1 style="color:black">First, we need to know a couple of things about you</h1>
             <form action="">
                
               <div> 
@@ -266,6 +269,7 @@
               ><input type="email" placeholder="Email"></div>
                <div><input type="text" placeholder="Company"> <input type="text" placeholder="Job"></div>
                <div><input type="number" placeholder="Phone Number">  <input type="text" placeholder="Country">              
+                
                </div>
                <div> <input id="submit" type="submit"></div>
             </form>
@@ -347,26 +351,7 @@
 </body>
 </html>
 <script>
-    let form=document.querySelector("form")
-    form.addEventListener("submit",myform)
-
-    let arrofdata=JSON.parse(localStorage.getItem("data"))||[]
-
-    function myform(event){
-        event.preventDefault()
-        let dataobj={
-
-            name:document.querySelector("#firstname").value,
-            last:document.querySelector("#last1").value,
-            email:document.querySelector("#email").value,
-            number:document.querySelector("#number").value,
-            country:document.querySelector("#country").value
-        }
-        arrofdata.push(dataobj)
-        console.log(arrofdata)
-        localStorage.setItem("data",JSON.stringify(arrofdata))
-       
-    }
+   
     let s=document.querySelector("#search")
     s.addEventListener("click",myserach)
 

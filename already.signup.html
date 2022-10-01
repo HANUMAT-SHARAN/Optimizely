@@ -16,7 +16,8 @@
 
         <div>
             <h1>You've already signed up</h1>
-            <h3>You haven't confirmed your email yet. A confirmation email was sent to zd@masaischool.com. Please check your inbox and follow the link to complete your registration.
+            <h3>You haven't confirmed your email yet. A confirmation email was sent <i><h1 id="already" style="font-weight:bold;"></h1></i>
+                Please check your inbox and follow the link to complete your registration.
                 <h3> If You have any Questions Please <a href="">contact us</a></h3>
                 
                 <h3>Do not see the confirmation email in your box?</h3>
@@ -45,6 +46,23 @@
     </div>
 </body>
 </html>
+<script>
+ let  already=localStorage.getItem("data")
+  document.querySelector("#already").innerText=already
+
+  let res=document.querySelector("#res")
+  res.addEventListener("click",myresend)
+
+  let log=document.querySelector("#log")
+  log.addEventListener("click",mylog)
+
+  function myresend(){
+    window.location.replace("signup.html")
+  }
+  function mylog(){
+    window.location.replace("login.html")
+  }
+</script>
 
 
     
