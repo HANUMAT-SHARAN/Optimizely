@@ -46,8 +46,8 @@ body{
     text-align: center;
 }
 #get{
-    border-radius:20px;
-    padding:0px 4px 0px 4px;
+    border-radius:25px;
+    padding:2px 30px;
 background-color: #0037fd;
    
 }
@@ -77,13 +77,15 @@ background-color: #0037fd;
     width:90%;
     margin:auto;
     gap:20px;
+
 }
 #plans>div{
   
     line-height: 30px;
     /* padding-left: 30px; */
-    background-color: #222222;
+    background-color: #f6f6f6 ;
     border-radius: 20px;
+   
 }
 .color1{
     width:100%;
@@ -143,19 +145,22 @@ background-color: #0037fd;
     text-align: center;
 }
 #plans>div>button{
-font-size: 20px;
+font-size: 15px;
 margin-left:35%;
 border-radius: 25px;
-padding: 10px;
+font-weight: bold;
+padding: 15px 30px;
 background-color: #0037fd;
+color:white;
 }
 #plans>div>button:hover{
-    background-color: blue;
+    background-color:blue ;
 }
 #color6{
    text-align: center;
    background-color: 
 #080736;
+color:white;
 }
 #color6>div{
     width:80%;
@@ -166,10 +171,11 @@ background-color: #0037fd;
 
 #color6>div>button{
     
-font-size: 20px;
-
+font-size: 15px;
+color:white;
+font-weight: bold;
 border-radius: 25px;
-padding: 10px;
+padding: 15px 30px;
 background-color: #0037fd;
 }
 #color6>div>button:hover{
@@ -182,26 +188,33 @@ background-color: #0037fd;
     gap:20px;
     width :90%;
    margin: auto;
-    background-color: #222222;
+    /* background-color: white; */
     text-align: left;
     margin-bottom: 100px;
 }
 #big{
-    background-color: #222222;
+    padding: 15px 30px;
     width: 100%;
     margin-top: 60px;
-  
+   
     text-align: left;
+    background-color: white;
     
  
  
 
 }
+#lastbar p,h3{
+    color:white;
+}
+
 #sol>div{
     text-align: left;
     display: flex;
     line-height: 30px;
-    background-color: #121212 ;
+    background-color: white ;
+  
+    border-radius:15px
    
 }
 #sol>div>:nth-child(1){
@@ -290,7 +303,7 @@ background-color: #080736 ;
 #lastbar>:nth-child(1)>div>p:hover{
 
     text-decoration:underline;
-    color:rgb(47, 1, 211)
+    color:white;
     
 
 }
@@ -319,13 +332,14 @@ grid-template-columns: repeat(4,1fr);
 grid-template-rows: repeat(1,auto);
 gap:20px;
 
-padding:30px;
+padding-left:50px;
 
 
 }
 #addon>div{
 
 width:90%;
+padding-left: 50px;
 
 
 
@@ -368,7 +382,7 @@ justify-content: space-around;
 
 }
 #big{
-    background-color: #222222;
+    background-color: white;
     width: 100%;
     margin-top: 60px;
   
@@ -444,7 +458,7 @@ padding:80px;
 }
 
 #big{
-    background-color: #222222;
+    background-color: white;
     width: 100%;
     margin-top: 60px;
   
@@ -487,8 +501,11 @@ width:60%;
 padding:20px;
 font-size: 20px;
 margin:auto;
-background-color: black;
+background-color: white;
 outline: #0037fd;
+border-radius: 15px;
+font-weight: bold;
+border:15px solid  #0037fd;
 
 margin-left: 10%;
 
@@ -501,7 +518,9 @@ padding:10px
 #cross{
 display: none;
 padding-right: 23%;
-font-size: 60px;
+font-size: 100px;
+color:black;
+font-weight: bold;
 
 }
 #searchbar{
@@ -513,8 +532,13 @@ justify-content: center;
 
 display: grid;
 grid-template-columns: repeat(1,1fr);
-grid-template-rows: repeat(1,300px);
+grid-template-rows: repeat(1,250px);
 background-color: #0037fd;
+width:90%;
+margin:auto;
+margin-top: 40px;
+margin-bottom: 80px;
+border-radius: 10px;
 
 
 }
@@ -523,16 +547,33 @@ background-color: #0037fd;
 display: flex;
 justify-content: space-around;
 align-items: center;
-border-radius: 15px;
+border-radius: 10px;
+
 
 
 
 
 
 }
+#big h4{
+    color:#0037ff
+}
+#big h4:hover{
+    color:black;
+}
+
+#addon h3{
+    color:#0037ff
+}
+#addon h3:hover{
+    color:black
+}
+#get1 a{
+    color:white
+}
 a{
     text-decoration: none;
-    color:white;
+    color:black;
  
 }
 #secondlast>div>:nth-child(2)>button{
@@ -540,8 +581,10 @@ a{
     font-size: 20px;
     
     border-radius: 25px;
-    padding: 10px;
+    padding: 15px 30px;
     background-color: #0037fd;
+    font-weight: bold;
+    color:white;
         }
 
         #secondlast>div>:nth-child(2)>button:hover{
@@ -558,20 +601,26 @@ width: 5%;
    
     display:none;
     position: absolute;
-    border-radius: 10px;
- background-color: black;
- width:15%;
-margin: auto;
-height: 300px;
-margin-left:70%;
-padding-top: 20px;
-padding-left:30px;
-background-color: #222222;
-color:#8b79c5 ;
-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-
+   
+   
+    width:15%;
+    height: 300px;
+   margin: auto;
+   margin-left:70%;
+   padding-top: 10px;
+   padding-left:30px;
+   background-color: white;
+   color:#083dff ;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+   
 }
 p{
     text-decoration: none;
+}
+#logintext h3{
+    color:#083dff;
+}
+#logintext h3:hover{
+    color:black
 }
 

@@ -23,9 +23,11 @@
                     <div id="cont"> <h1>Login</h1></div>
                 </div>
                 <div><img src="https://bit.ly/3E5HK2L" alt=""> <h2>Login With Google</h2></div>
+           
                 <div><h1>or</h1></div>
                 <div ><input id="inpu" type="email" placeholder="bob@atomicmartketing.com"></div>
-                <div id="cont"><h1>Continue <i class="fa-solid fa-arrow-right-long"></i></h1></div>
+                <div id="next"><h1>Continue <i class="fa-solid fa-arrow-right-long"></i></h1></div>
+               <i> <h1 id="empty" style="font-weight: bold; color: red;"></h1></i>
                 <div><h3>By signing up, you agree to the <a href="">Terms</a> & <a href="">Policy.</a> </h3></div>
                </div>                     
            
@@ -61,6 +63,11 @@
     let con=document.querySelector("#cont")
     con.addEventListener("click",myreplace)
 
+    let next=document.querySelector("#next")
+    next.addEventListener("click",mynext)
+
+   
+
     function myreplace(){
         window.location.replace("login.html")
     }
@@ -69,5 +76,18 @@
 
     function myreplacesame(){
         window.location.reload()
+    }
+
+
+    function mynext(){
+        if(document.querySelector("#inpu").value==""){
+            document.querySelector("#empty").innerText="EMAIL ADDRESS IS EMPTY"
+        }else{
+            let input=document.querySelector("#inpu").value
+    console.log(input)
+    localStorage.setItem("data",input)
+    window.location.replace("signup.after.html")
+        }
+     
     }
 </script>

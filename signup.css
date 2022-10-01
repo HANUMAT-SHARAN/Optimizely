@@ -41,7 +41,7 @@ body{
  
 }
 #signup>:nth-child(1)>:nth-child(1){
-    color:#db8cff;
+    color:black;
     text-decoration: underline; 
 }
 #inpu{
@@ -56,17 +56,32 @@ body{
 #signup>div:nth-child(5){
     background-color: #411e74;
 }
-
+#signup h1{
+    
+}
+#contsame{
+    color:black
+}
+#cont{
+    color:rgb(161, 157, 157);
+}
+#next{
+    color:white
+}
 
 #signup>div:nth-child(2){
-    background-color: black;
+    background-color: white;
+    border:3px solid rgba(100, 92, 92, 0.158);
+    border-radius: 10px;
+    
 }
 #signup>div:nth-child(2):hover{
-    background-color: white;
+    background-color: rgba(146, 136, 136, 0.699);
 }
 #main>div:nth-child(2){
     background-color: #5420a2;
     padding-left: 80px;
+color:white;
    
 }
 #main>div:nth-child(2)>div{
@@ -84,4 +99,24 @@ body{
 #main>div:nth-child(2)>div>div>div:nth-child(1){
   margin:auto;
   
+}
+@media all and (min-width:320px) and (max-width:700px){
+    #main{
+        width:100%;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+       
+        gap:20px;
+    
+    }
+}
+@media all and (min-width:701px) and (max-width:1020px){
+    #main{
+        width:100%;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+       
+        gap:20px;
+    
+    }
 }

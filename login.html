@@ -26,7 +26,8 @@
                 <div><h1>or</h1></div>
         
                 <div ><input id="inpu" type="email" placeholder="bob@atomicmartketing.com"></div>
-                <div id="cont"><h1>Continue  <i class="fa-solid fa-arrow-right-long"></i></h1></div>
+                <div id="redtologin"><h1>Continue  <i class="fa-solid fa-arrow-right-long"></i></h1></div>
+                <i><h1 id="red" style="color:red;font-weight:bold;"></h1></i>
                 <div><h3>By signing up, you agree to the <a href="">Terms</a> & <a href="">Policy.</a> </h3></div>
                </div>                     
            
@@ -70,5 +71,20 @@
 
     function myreplacesame(){
         window.location.replace("login.html")
+    }
+
+    let redtologin=document.querySelector("#redtologin")
+    redtologin.addEventListener("click",myredtologin)
+
+    function myredtologin(){
+        if(document.querySelector("#inpu").value==""){
+            document.querySelector("#red").innerText="EMAIL ADDRESS IS EMPTY"
+        }else if(document.querySelector("#inpu").value==localStorage.getItem("data")){
+            window.location.replace("already.signup.html")
+            
+        }else{
+            document.querySelector("#red").innerText="YOU DON'T HAVE AN ACCOUNT PLEASE SIGN UP NOW"
+            // window.location.replace("signup.html")
+        }
     }
 </script>

@@ -15,6 +15,12 @@ body{
     text-align: center;
    
 }
+#cont{
+  color: rgb(122, 117, 117);
+}
+#contsame{
+    color:black
+}
 #signup{
     display: grid;
  
@@ -41,7 +47,7 @@ body{
  
 }
 #signup>:nth-child(1)>:nth-child(2){
-    color:#db8cff;
+    color:black;
    text-decoration: underline;
 }
 #inpu{
@@ -59,14 +65,19 @@ body{
 
 
 #signup>div:nth-child(2){
-    background-color: black;
+    background-color: white;
 }
 #signup>div:nth-child(2):hover{
-    background-color: white;
+    background-color: rgba(146, 136, 136, 0.699);
+
+}
+#redtologin{
+    color:white;
 }
 #main>div:nth-child(2){
     background-color: #5420a2;
     padding-left: 80px;
+    color:white;
    
 }
 #main>div:nth-child(2)>div{
@@ -85,3 +96,24 @@ body{
   margin:auto;
   
 }
+@media all and (min-width:320px) and (max-width:700px){
+    #main{
+        width:100%;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+       
+        gap:20px;
+    
+    }
+}
+@media all and (min-width:701px) and (max-width:1020px){
+    #main{
+        width:100%;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+       
+        gap:20px;
+    
+    }
+}
+
