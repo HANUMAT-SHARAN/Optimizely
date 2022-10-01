@@ -54,9 +54,7 @@ color:white;
 
    
 }
-#get:hover{
-   
-}
+
 #first>div:hover{
     text-decoration:underline;
     color:rgb(47, 1, 211)
@@ -79,10 +77,7 @@ color:white;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(1,auto);
 }
-#unlock>div{
 
-  
-}
 #unlock h1{
     font-size: 70px;
 }
@@ -388,9 +383,7 @@ margin:auto;
 color:white;
 
 }
-#lastbar>div{
 
-}
 #lastbar>:nth-child(1){
 display: grid;
 grid-template-columns: repeat(5,1fr);
@@ -417,9 +410,7 @@ background-color: #080736 ;
     
 
 }
-#lastbar>div{
 
-}
 #last{
 
 width: 100%;
@@ -474,9 +465,7 @@ color:black;
    
 
 }
-form>#em>input{
-width:50%
-}
+
 #video{
   
   
@@ -565,8 +554,9 @@ grid-template-columns: repeat(1,1fr);
  grid-template-columns: repeat(1,1fr);
 
 }
-form>#em>input{
-width:62%
+form>#em>#j{
+width: 62%;
+
 }
 #video{
   
@@ -695,3 +685,4 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
     color: black;
  
 }
+
